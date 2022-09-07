@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - bem_brasil</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/bem_brasil.styles.css" asp-append-version="true" />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <header>
+     <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Container wrapper -->
+  <div class="container">
+    <!-- Navbar brand -->
+    <a class="navbar-brand me-2" href="https://mdbgo.com/">
+      <img
+        src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+        height="16"
+        alt="MDB Logo"
+        loading="lazy"
+        style="margin-top: -1px;"
+      />
+    </a>
+
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarButtonsExample"
+      aria-controls="navbarButtonsExample"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarButtonsExample">
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" asp-controller="Home" asp-action="Index">Dashboard</a>
+        </li>
+      </ul>
+      <!-- Left links -->
+
+      <div class="d-flex align-items-center">
+        <a class="btn btn-link px-3 me-2" asp-area="" asp-controller="Home" asp-action="Login">Login</a>
+
+        <a class="btn btn-primary me-3" asp-area="" asp-controller="Home" asp-action="Registro">Cadastre-se</a>
+
+        <a
+          class="btn btn-dark px-3"
+          href="https://github.com/mdbootstrap/mdb-ui-kit"
+          role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - bem_brasil - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
