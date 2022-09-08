@@ -67,26 +67,68 @@
         <a class="btn btn-link px-3 me-2" asp-area="" asp-controller="Home" asp-action="Login">Login</a>
 
         <a class="btn btn-primary me-3" asp-area="" asp-controller="Home" asp-action="Registro">Cadastre-se</a>
-
-        <a
-          class="btn btn-dark px-3"
-          href="https://github.com/mdbootstrap/mdb-ui-kit"
-          role="button"
-          ><i class="fab fa-github"></i
-        ></a>
       </div>
     </div>
     <!-- Collapsible wrapper -->
+
+
+
+
+
+     <ul class="navbar-nav d-flex flex-row">
+      <!-- Icon dropdown -->
+      <li class="nav-item me-3 me-lg-0 dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="fas fa-user"></i>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li>
+            <a class="dropdown-item" href="#">Action</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Another action</a>
+          </li>
+          <li><hr class="dropdown-divider" /></li>
+          <li>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
   </div>
-  <!-- Container wrapper -->
 </nav>
 <!-- Navbar -->
+<div class="navbar navbar-expand-lg navbar-light";>
+  <div class="collapse navbar-collapse justify-content-center">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a asp-controller="Home" asp-action="Precisodisso">Preciso disso</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a asp-controller="Home" asp-action="Querodoar">Quero doar</a>
+        </li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+
     </header>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
+
+
 
     <footer class="border-top footer text-muted">
         <div class="container">

@@ -16,3 +16,29 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.containerIndex {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: -1px 2px 8px 1px gray;
+}
+
+.tituloIndex{
+    font-size: 25px;
+}
+
+/* adicinar item precisodisso */
+
+.h1Preciso, .h1Doar{
+    font-size: 20px;
+}
+
+.divPreciso, .divDoar {
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: -1px 2px 8px 1px gray;
+    padding: 3px;
+    border-radius: 10px
+}
