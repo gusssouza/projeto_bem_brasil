@@ -22,7 +22,7 @@ body {
     padding: 20px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: -1px 2px 8px 1px gray;
+    box-shadow: 1px 2px 8px 1px rgb(225, 225, 225);
 }
 
 .tituloIndex{
@@ -38,7 +38,37 @@ body {
 .divPreciso, .divDoar {
     margin-top: 20px;
     text-align: center;
-    box-shadow: -1px 2px 8px 1px gray;
+    box-shadow: 1px 2px 8px 1px rgb(225, 225, 225);
     padding: 3px;
     border-radius: 10px
+}
+
+
+
+
+/* página sobre */
+/* desenvolvido por */
+
+.desenvolvidoPor{
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.tituloSobre {
+    padding: 3px;
+    font-size: 20px;
+    margin-top: 30px;
+
+}
+
+.strongSobre {
+    border-radius: 6px;
+    padding: 5px;
+    box-shadow: 1px 2px 8px 1px rgb(225, 225, 225);
+}
+
+.textoSobre{
+    margin-top: 40px;
+    padding: 5px;  
+    font-size: 20px;
 }
