@@ -25,8 +25,9 @@ body {
     box-shadow: 1px 2px 8px 1px rgb(225, 225, 225);
 }
 
-.tituloIndex{
+.tituloIndex {
     font-size: 25px;
+    color: #007C8A;
 }
 
 /* adicinar item precisodisso */
@@ -59,7 +60,6 @@ body {
     font-size: 25px;
     margin-top: 30px;
     text-decoration: overline;
-    color: green;
 }
 
 .strongSobre {
@@ -70,4 +70,8 @@ body {
     margin-top: 40px;
     padding: 5px;  
     font-size: 20px;
+}
+
+h3 {
+
 }
