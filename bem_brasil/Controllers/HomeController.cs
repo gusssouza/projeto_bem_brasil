@@ -1,5 +1,6 @@
 ﻿using bem_brasil.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System.Diagnostics;
 
 namespace bem_brasil.Controllers
