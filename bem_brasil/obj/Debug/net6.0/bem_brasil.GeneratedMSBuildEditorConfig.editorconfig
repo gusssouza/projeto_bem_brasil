@@ -8,65 +8,65 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = bem_brasil
 build_property.RootNamespace = bem_brasil
-build_property.ProjectDir = C:\Users\HyperV\Downloads\projeto_bem_brasil\bem_brasil\
+build_property.ProjectDir = C:\Users\DEV\source\repos\projeto_bem_brasil\bem_brasil\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\HyperV\Downloads\projeto_bem_brasil\bem_brasil
+build_property.MSBuildProjectDirectory = C:\Users\DEV\source\repos\projeto_bem_brasil\bem_brasil
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/HyperV/Downloads/projeto_bem_brasil/bem_brasil/Views/Home/entrega.cshtml]
+[C:/Users/DEV/source/repos/projeto_bem_brasil/bem_brasil/Views/Home/entrega.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxlbnRyZWdhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HyperV/Downloads/projeto_bem_brasil/bem_brasil/Views/Home/Index.cshtml]
+[C:/Users/DEV/source/repos/projeto_bem_brasil/bem_brasil/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HyperV/Downloads/projeto_bem_brasil/bem_brasil/Views/Home/login.cshtml]
+[C:/Users/DEV/source/repos/projeto_bem_brasil/bem_brasil/Views/Home/login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxsb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HyperV/Downloads/projeto_bem_brasil/bem_brasil/Views/Home/pedido.cshtml]
+[C:/Users/DEV/source/repos/projeto_bem_brasil/bem_brasil/Views/Home/pedido.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxwZWRpZG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HyperV/Downloads/projeto_bem_brasil/bem_brasil/Views/Home/precisodisso.cshtml]
+[C:/Users/DEV/source/repos/projeto_bem_brasil/bem_brasil/Views/Home/precisodisso.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxwcmVjaXNvZGlzc28uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HyperV/Downloads/projeto_bem_brasil/bem_brasil/Views/Home/Privacy.cshtml]
+[C:/Users/DEV/source/repos/projeto_bem_brasil/bem_brasil/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HyperV/Downloads/projeto_bem_brasil/bem_brasil/Views/Home/querodoar.cshtml]
+[C:/Users/DEV/source/repos/projeto_bem_brasil/bem_brasil/Views/Home/querodoar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxxdWVyb2RvYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HyperV/Downloads/projeto_bem_brasil/bem_brasil/Views/Home/registro.cshtml]
+[C:/Users/DEV/source/repos/projeto_bem_brasil/bem_brasil/Views/Home/registro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxyZWdpc3Ryby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HyperV/Downloads/projeto_bem_brasil/bem_brasil/Views/Home/sobre.cshtml]
+[C:/Users/DEV/source/repos/projeto_bem_brasil/bem_brasil/Views/Home/sobre.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxzb2JyZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HyperV/Downloads/projeto_bem_brasil/bem_brasil/Views/Shared/Error.cshtml]
+[C:/Users/DEV/source/repos/projeto_bem_brasil/bem_brasil/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HyperV/Downloads/projeto_bem_brasil/bem_brasil/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/DEV/source/repos/projeto_bem_brasil/bem_brasil/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HyperV/Downloads/projeto_bem_brasil/bem_brasil/Views/_ViewImports.cshtml]
+[C:/Users/DEV/source/repos/projeto_bem_brasil/bem_brasil/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HyperV/Downloads/projeto_bem_brasil/bem_brasil/Views/_ViewStart.cshtml]
+[C:/Users/DEV/source/repos/projeto_bem_brasil/bem_brasil/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HyperV/Downloads/projeto_bem_brasil/bem_brasil/Views/Shared/_Layout.cshtml]
+[C:/Users/DEV/source/repos/projeto_bem_brasil/bem_brasil/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-3dklo1qywi
