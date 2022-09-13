@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sy4++RYRkcYumwi4SkYYqW6klZZ8FcGnj1hpmP35lMA=",
+  "Hash": "44SqbbHR6N68QI5OFrnMiE+lOrnKb8m4G50yt10AL9s=",
   "Source": "bem_brasil",
   "BasePath": "_content/bem_brasil",
   "Mode": "Default",
@@ -85,23 +85,6 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\nicolas.carvalho2\\Downloads\\projeto_bem_brasil\\bem_brasil\\wwwroot\\img\\Free_Sample_By_Wix.png",
-      "SourceId": "bem_brasil",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nicolas.carvalho2\\Downloads\\projeto_bem_brasil\\bem_brasil\\wwwroot\\",
-      "BasePath": "_content/bem_brasil",
-      "RelativePath": "img/Free_Sample_By_Wix.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\Free_Sample_By_Wix.png"
-    },
-    {
       "Identity": "C:\\Users\\nicolas.carvalho2\\Downloads\\projeto_bem_brasil\\bem_brasil\\wwwroot\\img\\gab_retz.jfif",
       "SourceId": "bem_brasil",
       "SourceType": "Discovered",
@@ -153,6 +136,23 @@
       "OriginalItemSpec": "wwwroot\\img\\icon_chat.png"
     },
     {
+      "Identity": "C:\\Users\\nicolas.carvalho2\\Downloads\\projeto_bem_brasil\\bem_brasil\\wwwroot\\img\\logo.png",
+      "SourceId": "bem_brasil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nicolas.carvalho2\\Downloads\\projeto_bem_brasil\\bem_brasil\\wwwroot\\",
+      "BasePath": "_content/bem_brasil",
+      "RelativePath": "img/logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\logo.png"
+    },
+    {
       "Identity": "C:\\Users\\nicolas.carvalho2\\Downloads\\projeto_bem_brasil\\bem_brasil\\wwwroot\\img\\luis.jfif",
       "SourceId": "bem_brasil",
       "SourceType": "Discovered",
@@ -202,40 +202,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\portella.jfif"
-    },
-    {
-      "Identity": "C:\\Users\\nicolas.carvalho2\\Downloads\\projeto_bem_brasil\\bem_brasil\\wwwroot\\img\\zyro-image-grande.png",
-      "SourceId": "bem_brasil",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nicolas.carvalho2\\Downloads\\projeto_bem_brasil\\bem_brasil\\wwwroot\\",
-      "BasePath": "_content/bem_brasil",
-      "RelativePath": "img/zyro-image-grande.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\zyro-image-grande.png"
-    },
-    {
-      "Identity": "C:\\Users\\nicolas.carvalho2\\Downloads\\projeto_bem_brasil\\bem_brasil\\wwwroot\\img\\zyro-image-grande-cortado.png",
-      "SourceId": "bem_brasil",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nicolas.carvalho2\\Downloads\\projeto_bem_brasil\\bem_brasil\\wwwroot\\",
-      "BasePath": "_content/bem_brasil",
-      "RelativePath": "img/zyro-image-grande-cortado.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\zyro-image-grande-cortado.png"
     },
     {
       "Identity": "C:\\Users\\nicolas.carvalho2\\Downloads\\projeto_bem_brasil\\bem_brasil\\wwwroot\\js\\site.js",
