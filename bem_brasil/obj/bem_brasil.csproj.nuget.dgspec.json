@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HyperV\\Source\\Repos\\projeto_bem_brasil\\bem_brasil\\bem_brasil.csproj": {}
+    "C:\\Users\\HyperV\\Documents\\projeto_bem_brasil\\bem_brasil\\bem_brasil.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HyperV\\Source\\Repos\\projeto_bem_brasil\\bem_brasil\\bem_brasil.csproj": {
+    "C:\\Users\\HyperV\\Documents\\projeto_bem_brasil\\bem_brasil\\bem_brasil.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HyperV\\Source\\Repos\\projeto_bem_brasil\\bem_brasil\\bem_brasil.csproj",
+        "projectUniqueName": "C:\\Users\\HyperV\\Documents\\projeto_bem_brasil\\bem_brasil\\bem_brasil.csproj",
         "projectName": "bem_brasil",
-        "projectPath": "C:\\Users\\HyperV\\Source\\Repos\\projeto_bem_brasil\\bem_brasil\\bem_brasil.csproj",
+        "projectPath": "C:\\Users\\HyperV\\Documents\\projeto_bem_brasil\\bem_brasil\\bem_brasil.csproj",
         "packagesPath": "C:\\Users\\HyperV\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HyperV\\Source\\Repos\\projeto_bem_brasil\\bem_brasil\\obj\\",
+        "outputPath": "C:\\Users\\HyperV\\Documents\\projeto_bem_brasil\\bem_brasil\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

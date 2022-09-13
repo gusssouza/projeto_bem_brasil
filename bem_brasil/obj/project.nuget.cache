@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a2YCESURJ7itmX4buJ/SbXAgnqYjOwku98zVD6dg0ggPSGT/d16Q/F5fzfHfkmcAD4Bu0HM+JUkWrE1H9KDFcw==",
+  "dgSpecHash": "ZQNZA9r60BvYl1vW8M2JsV+spP1M9MsTvOfEPT1XY9MUroJvXYwjMWAGYsb2wSY/0xT1GS3VT2sEspqNXHPnSg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HyperV\\Source\\Repos\\projeto_bem_brasil\\bem_brasil\\bem_brasil.csproj",
+  "projectFilePath": "C:\\Users\\HyperV\\Documents\\projeto_bem_brasil\\bem_brasil\\bem_brasil.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HyperV\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\HyperV\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

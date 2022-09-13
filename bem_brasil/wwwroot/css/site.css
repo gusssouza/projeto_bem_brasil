@@ -1,20 +1,20 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .containerIndex {
@@ -25,13 +25,14 @@ body {
     box-shadow: 1px 2px 8px 1px rgb(225, 225, 225);
 }
 
-.tituloIndex{
+.tituloIndex {
     font-size: 25px;
+    color: #009791;
 }
 
 /* adicinar item precisodisso */
 
-.h1Preciso, .h1Doar{
+.h1Preciso, .h1Doar {
     font-size: 20px;
 }
 
@@ -49,7 +50,7 @@ body {
 /* página sobre */
 /* desenvolvido por */
 
-.desenvolvidoPor{
+.desenvolvidoPor {
     margin-bottom: 50px;
     margin-top: 20px;
 }
@@ -59,15 +60,14 @@ body {
     font-size: 25px;
     margin-top: 30px;
     text-decoration: overline;
-    color: green;
 }
 
 .strongSobre {
     padding: 5px;
 }
 
-.textoSobre{
+.textoSobre {
     margin-top: 40px;
-    padding: 5px;  
+    padding: 5px;
     font-size: 20px;
 }
