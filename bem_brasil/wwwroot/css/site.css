@@ -60,6 +60,7 @@ body {
     font-size: 25px;
     margin-top: 30px;
     text-decoration: overline;
+    color: #009791;
 }
 
 .strongSobre {
@@ -70,4 +71,12 @@ body {
     margin-top: 40px;
     padding: 5px;
     font-size: 20px;
+}
+
+.email {
+    color: dimgray;
+}
+    
+.email:hover {
+    color: #3bca78;
 }

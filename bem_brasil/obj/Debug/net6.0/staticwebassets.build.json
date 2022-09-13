@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tD555PyWFJrMhWHGKMZdEaVlAIo3x9jxhhPlntg478E=",
+  "Hash": "7olIOnv+NJ9oIHIQijHYtXg81WS37UQ4Nh1CWKw6TWw=",
   "Source": "bem_brasil",
   "BasePath": "_content/bem_brasil",
   "Mode": "Default",
@@ -117,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\gustavo.jfif"
+    },
+    {
+      "Identity": "C:\\Users\\HyperV\\Documents\\projeto_bem_brasil\\bem_brasil\\wwwroot\\img\\logo_bb.png",
+      "SourceId": "bem_brasil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HyperV\\Documents\\projeto_bem_brasil\\bem_brasil\\wwwroot\\",
+      "BasePath": "_content/bem_brasil",
+      "RelativePath": "img/logo_bb.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\logo_bb.png"
     },
     {
       "Identity": "C:\\Users\\HyperV\\Documents\\projeto_bem_brasil\\bem_brasil\\wwwroot\\img\\luis.jfif",
