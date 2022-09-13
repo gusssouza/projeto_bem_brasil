@@ -1,5 +1,8 @@
-﻿using bem_brasil.Models;
+﻿using bem_brasil.Data;
+using bem_brasil.Models;
+using bem_brasil.Repositorio;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System.Diagnostics;
 
 namespace bem_brasil.Controllers
@@ -7,9 +10,12 @@ namespace bem_brasil.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IOperadorRepositorio _operadorRepositorio;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger,
+            IOperadorRepositorio operadorRepositorio)
         {
+            _operadorRepositorio = operadorRepositorio;
             _logger = logger;
         }
 
@@ -56,6 +62,13 @@ namespace bem_brasil.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        [HttpPost]
+        public IActionResult CadastrarOperador (Operador operador)
+        {
+            _operadorRepositorio.AdicionarOperador(operador);
+            return RedirectToAction("Index");
         }
     }
 }
