@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+K0VGiAq2C9DYjmVSM/xIaIy+HJCwJiTAxjMsXNZOvc=",
+  "Hash": "sy4++RYRkcYumwi4SkYYqW6klZZ8FcGnj1hpmP35lMA=",
   "Source": "bem_brasil",
   "BasePath": "_content/bem_brasil",
   "Mode": "Default",
@@ -85,6 +85,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\nicolas.carvalho2\\Downloads\\projeto_bem_brasil\\bem_brasil\\wwwroot\\img\\Free_Sample_By_Wix.png",
+      "SourceId": "bem_brasil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nicolas.carvalho2\\Downloads\\projeto_bem_brasil\\bem_brasil\\wwwroot\\",
+      "BasePath": "_content/bem_brasil",
+      "RelativePath": "img/Free_Sample_By_Wix.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Free_Sample_By_Wix.png"
+    },
+    {
       "Identity": "C:\\Users\\nicolas.carvalho2\\Downloads\\projeto_bem_brasil\\bem_brasil\\wwwroot\\img\\gab_retz.jfif",
       "SourceId": "bem_brasil",
       "SourceType": "Discovered",
@@ -117,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\gustavo.jfif"
+    },
+    {
+      "Identity": "C:\\Users\\nicolas.carvalho2\\Downloads\\projeto_bem_brasil\\bem_brasil\\wwwroot\\img\\icon_chat.png",
+      "SourceId": "bem_brasil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nicolas.carvalho2\\Downloads\\projeto_bem_brasil\\bem_brasil\\wwwroot\\",
+      "BasePath": "_content/bem_brasil",
+      "RelativePath": "img/icon_chat.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\icon_chat.png"
     },
     {
       "Identity": "C:\\Users\\nicolas.carvalho2\\Downloads\\projeto_bem_brasil\\bem_brasil\\wwwroot\\img\\luis.jfif",
@@ -168,6 +202,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\portella.jfif"
+    },
+    {
+      "Identity": "C:\\Users\\nicolas.carvalho2\\Downloads\\projeto_bem_brasil\\bem_brasil\\wwwroot\\img\\zyro-image-grande.png",
+      "SourceId": "bem_brasil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nicolas.carvalho2\\Downloads\\projeto_bem_brasil\\bem_brasil\\wwwroot\\",
+      "BasePath": "_content/bem_brasil",
+      "RelativePath": "img/zyro-image-grande.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\zyro-image-grande.png"
+    },
+    {
+      "Identity": "C:\\Users\\nicolas.carvalho2\\Downloads\\projeto_bem_brasil\\bem_brasil\\wwwroot\\img\\zyro-image-grande-cortado.png",
+      "SourceId": "bem_brasil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nicolas.carvalho2\\Downloads\\projeto_bem_brasil\\bem_brasil\\wwwroot\\",
+      "BasePath": "_content/bem_brasil",
+      "RelativePath": "img/zyro-image-grande-cortado.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\zyro-image-grande-cortado.png"
     },
     {
       "Identity": "C:\\Users\\nicolas.carvalho2\\Downloads\\projeto_bem_brasil\\bem_brasil\\wwwroot\\js\\site.js",
