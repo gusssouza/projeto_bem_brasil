@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DEV\\source\\repos\\projeto_bem_brasil\\bem_brasil\\bem_brasil.csproj": {}
+    "C:\\Users\\HyperV\\Source\\Repos\\projeto_bem_brasil\\bem_brasil\\bem_brasil.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DEV\\source\\repos\\projeto_bem_brasil\\bem_brasil\\bem_brasil.csproj": {
+    "C:\\Users\\HyperV\\Source\\Repos\\projeto_bem_brasil\\bem_brasil\\bem_brasil.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DEV\\source\\repos\\projeto_bem_brasil\\bem_brasil\\bem_brasil.csproj",
+        "projectUniqueName": "C:\\Users\\HyperV\\Source\\Repos\\projeto_bem_brasil\\bem_brasil\\bem_brasil.csproj",
         "projectName": "bem_brasil",
-        "projectPath": "C:\\Users\\DEV\\source\\repos\\projeto_bem_brasil\\bem_brasil\\bem_brasil.csproj",
-        "packagesPath": "C:\\Users\\DEV\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DEV\\source\\repos\\projeto_bem_brasil\\bem_brasil\\obj\\",
+        "projectPath": "C:\\Users\\HyperV\\Source\\Repos\\projeto_bem_brasil\\bem_brasil\\bem_brasil.csproj",
+        "packagesPath": "C:\\Users\\HyperV\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HyperV\\Source\\Repos\\projeto_bem_brasil\\bem_brasil\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\DEV\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HyperV\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,8 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/moneyp/_packaging/FulltechPro.DotNet/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -43,6 +43,28 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.12, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -61,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
