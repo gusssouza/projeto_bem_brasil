@@ -1,9 +1,0 @@
-C:\Users\DEV\source\repos\projeto_bem_brasil\bem_brasil\obj\Debug\net5.0\bem_brasil.csproj.AssemblyReference.cache
-C:\Users\DEV\source\repos\projeto_bem_brasil\bem_brasil\obj\Debug\net5.0\bem_brasil.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\DEV\source\repos\projeto_bem_brasil\bem_brasil\obj\Debug\net5.0\bem_brasil.AssemblyInfoInputs.cache
-C:\Users\DEV\source\repos\projeto_bem_brasil\bem_brasil\obj\Debug\net5.0\bem_brasil.AssemblyInfo.cs
-C:\Users\DEV\source\repos\projeto_bem_brasil\bem_brasil\obj\Debug\net5.0\bem_brasil.csproj.CoreCompileInputs.cache
-C:\Users\DEV\source\repos\projeto_bem_brasil\bem_brasil\obj\Debug\net5.0\bem_brasil.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\DEV\source\repos\projeto_bem_brasil\bem_brasil\obj\Debug\net5.0\bem_brasil.RazorComponent.input.cache
-C:\Users\DEV\source\repos\projeto_bem_brasil\bem_brasil\obj\Debug\net5.0\bem_brasil.RazorAssemblyInfo.cache
-C:\Users\DEV\source\repos\projeto_bem_brasil\bem_brasil\obj\Debug\net5.0\bem_brasil.RazorAssemblyInfo.cs
