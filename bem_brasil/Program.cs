@@ -1,11 +1,11 @@
-using bem_brasil.Data;
+using bem_brasil.DataDb;
 using bem_brasil.Repositorio;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<bemBrasilContext>();
+builder.Services.AddDbContext<bemBrasil_SPBContext>();
 builder.Services.AddScoped<IOperadorRepositorio, OperadorRepositorio>();
 
 var app = builder.Build();

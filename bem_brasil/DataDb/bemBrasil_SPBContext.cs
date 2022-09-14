@@ -4,15 +4,15 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 #nullable disable
 
-namespace bem_brasil.Data
+namespace bem_brasil.DataDb
 {
-    public partial class bemBrasilContext : DbContext
+    public partial class bemBrasil_SPBContext : DbContext
     {
-        public bemBrasilContext()
+        public bemBrasil_SPBContext()
         {
         }
 
-        public bemBrasilContext(DbContextOptions<bemBrasilContext> options)
+        public bemBrasil_SPBContext(DbContextOptions<bemBrasil_SPBContext> options)
             : base(options)
         {
         }
@@ -29,7 +29,7 @@ namespace bem_brasil.Data
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Server=./;Database=bemBrasil;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=./;Database=bemBrasil_SPB;Trusted_Connection=True;");
             }
         }
 
@@ -40,7 +40,7 @@ namespace bem_brasil.Data
             modelBuilder.Entity<Cidade>(entity =>
             {
                 entity.HasKey(e => e.CodigoCidade)
-                    .HasName("PK__Cidade__67E4AB1CC7BACB48");
+                    .HasName("PK__Cidade__67E4AB1CA623F444");
 
                 entity.ToTable("Cidade");
 
@@ -55,25 +55,30 @@ namespace bem_brasil.Data
             modelBuilder.Entity<Doaco>(entity =>
             {
                 entity.HasKey(e => e.CodigoDoacoes)
-                    .HasName("PK__Doacoes__576AB63CFCD3FC82");
+                    .HasName("PK__Doacoes__576AB63CCEB6C7CE");
 
                 entity.Property(e => e.CodigoDoacoes).ValueGeneratedNever();
+
+                entity.HasOne(d => d.CodigoEnderecoNavigation)
+                    .WithMany(p => p.Doacos)
+                    .HasForeignKey(d => d.CodigoEndereco)
+                    .HasConstraintName("FK__Doacoes__CodigoE__30F848ED");
 
                 entity.HasOne(d => d.CodigoOperadorNavigation)
                     .WithMany(p => p.Doacos)
                     .HasForeignKey(d => d.CodigoOperador)
-                    .HasConstraintName("FK__Doacoes__CodigoO__30F848ED");
+                    .HasConstraintName("FK__Doacoes__CodigoO__31EC6D26");
 
                 entity.HasOne(d => d.CodigoProdutoNavigation)
                     .WithMany(p => p.Doacos)
                     .HasForeignKey(d => d.CodigoProduto)
-                    .HasConstraintName("FK__Doacoes__CodigoP__31EC6D26");
+                    .HasConstraintName("FK__Doacoes__CodigoP__32E0915F");
             });
 
             modelBuilder.Entity<Endereco>(entity =>
             {
                 entity.HasKey(e => e.CodigoEndereco)
-                    .HasName("PK__Endereco__ECFD971274D606FA");
+                    .HasName("PK__Endereco__ECFD971203271D00");
 
                 entity.ToTable("Endereco");
 
@@ -81,16 +86,16 @@ namespace bem_brasil.Data
 
                 entity.Property(e => e.Cep).HasColumnName("CEP");
 
-                entity.HasOne(d => d.CodigoCidadeNavigation)
+                entity.HasOne(d => d.CodigoOperadorNavigation)
                     .WithMany(p => p.Enderecos)
-                    .HasForeignKey(d => d.CodigoCidade)
-                    .HasConstraintName("FK__Endereco__Codigo__29572725");
+                    .HasForeignKey(d => d.CodigoOperador)
+                    .HasConstraintName("FK__Endereco__Codigo__2C3393D0");
             });
 
             modelBuilder.Entity<Estado>(entity =>
             {
                 entity.HasKey(e => e.CodigoEstado)
-                    .HasName("PK__Estado__6BC4B7F00203CA5E");
+                    .HasName("PK__Estado__6BC4B7F0CC897708");
 
                 entity.ToTable("Estado");
 
@@ -106,7 +111,7 @@ namespace bem_brasil.Data
             modelBuilder.Entity<Operador>(entity =>
             {
                 entity.HasKey(e => e.CodigoOperador)
-                    .HasName("PK__Operador__62F78FE28A0C8F1E");
+                    .HasName("PK__Operador__62F78FE2B253FC59");
 
                 entity.ToTable("Operador");
 
@@ -114,20 +119,22 @@ namespace bem_brasil.Data
 
                 entity.Property(e => e.Cpf).HasColumnName("CPF");
 
-                entity.HasOne(d => d.CodigoEnderecoNavigation)
+                entity.HasOne(d => d.CodigoCidadeNavigation)
                     .WithMany(p => p.Operadors)
-                    .HasForeignKey(d => d.CodigoEndereco)
-                    .HasConstraintName("FK__Operador__Codigo__2C3393D0");
+                    .HasForeignKey(d => d.CodigoCidade)
+                    .HasConstraintName("FK__Operador__Codigo__29572725");
             });
 
             modelBuilder.Entity<Produto>(entity =>
             {
                 entity.HasKey(e => e.CodigoProduto)
-                    .HasName("PK__Produto__F94CC5B91AB550AD");
+                    .HasName("PK__Produto__F94CC5B9C7E549BE");
 
                 entity.ToTable("Produto");
 
                 entity.Property(e => e.CodigoProduto).ValueGeneratedNever();
+
+                entity.Property(e => e.Validade).HasColumnType("datetime");
             });
 
             OnModelCreatingPartial(modelBuilder);
