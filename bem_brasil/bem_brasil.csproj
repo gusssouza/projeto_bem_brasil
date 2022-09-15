@@ -43,7 +43,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Views\Home\publicardoacao.cshtml" />
+    <None Include="Views\Publicar\publicardoacao.cshtml" />
   </ItemGroup>
 
 </Project>
