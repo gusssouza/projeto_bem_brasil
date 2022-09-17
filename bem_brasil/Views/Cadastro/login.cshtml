@@ -1,4 +1,6 @@
-﻿@{
+﻿@using bem_brasil.DataDb
+@model Operador
+@{
     ViewData["Title"] = "Login";
 }
 
@@ -21,25 +23,17 @@
       <div class="row d-flex justify-content-center">
         <div class="col-lg-8">
           <h2 class="fw-bold mb-5">Login</h2>
-          <form>
+          <form asp-controller="Cadastro" asp-action="Logar" method="get">
             <!-- Email input -->
             <div class="form-outline mb-4">
-              <input type="email" id="login" class="form-control" />
+              <input type="email" id="login" asp-for="Email" class="form-control" />
               <label class="form-label" for="login">Email ou Login</label>
             </div>
 
             <!-- Password input -->
             <div class="form-outline mb-4">
-              <input type="password" id="senha" class="form-control" />
+              <input type="password" id="senha" asp-for="Senha" class="form-control" />
               <label class="form-label" for="senha">Senha</label>
-            </div>
-
-            <!-- Checkbox -->
-            <div class="form-check d-flex justify-content-center mb-4">
-              <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
-              <label class="form-check-label" for="form2Example33">
-                Salvar senha
-              </label>
             </div>
 
             <!-- Submit button -->
@@ -48,7 +42,7 @@
             </button>
 
             <div class="text-center">
-            <p>Não tem uma conta? <a asp-area="" asp-controller="Home" asp-action="Registro">Cadastre-se</a></p>
+            <p>Não tem uma conta? <a asp-area="" asp-controller="Cadastro" asp-action="Registro">Cadastre-se</a></p>
             </div>
           </form>
         </div>

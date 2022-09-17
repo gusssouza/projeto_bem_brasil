@@ -39,16 +39,7 @@ namespace bem_brasil.Controllers
             return View();
         }
 
-        public IActionResult Login()
-        {
-            return View();
-        }
-
         public IActionResult Entrega()
-        {
-            return View();
-        }
-        public IActionResult Registro()
         {
             return View();
         }
@@ -62,13 +53,6 @@ namespace bem_brasil.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
-
-        [HttpPost]
-        public IActionResult CadastrarOperador (Operador operador)
-        {
-            _operadorRepositorio.AdicionarOperador(operador);
-            return RedirectToAction("Index");
         }
     }
 }
