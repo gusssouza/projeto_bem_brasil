@@ -19,6 +19,8 @@ namespace bem_brasil.DataDb
         public string Cpf { get; set; }
         public int? TipoOperador { get; set; }
         public Guid? CodigoCidade { get; set; }
+        public DateTime? DtInclusao { get; set; }
+        public string? Senha { get; set; }
 
         public virtual Cidade CodigoCidadeNavigation { get; set; }
         public virtual ICollection<Doaco> Doacos { get; set; }
