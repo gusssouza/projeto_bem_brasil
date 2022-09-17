@@ -15,5 +15,10 @@ namespace bem_brasil.Controllers
         {
             return View();
         }
+
+        public IActionResult PublicarPedido()
+        {
+            return View();
+        }
     }
 }
