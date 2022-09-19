@@ -36,17 +36,17 @@ const salvar_cookies = () => {
     const login = document.getElementById("login");
     const senha = document.getElementById("senha");
     const checkbox = document.getElementById("form2Example33");
+    console.log( "i")
 
-    const date = new Data();
     const date = new Date();
     const time = date.getTime();
-    var expireTime = time + 15 * 60;
+    var expireTime = time + 1500 * 60;
     now.setTime(expireTime);
 
     if (checkbox.checked) {
         setCookie("login", login, now);
         setCookie("senha", senha, now);
     }
-    
+
     
 }
