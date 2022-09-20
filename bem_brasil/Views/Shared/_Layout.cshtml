@@ -98,10 +98,10 @@
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
           <li>
-            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" asp-controller="Publicar" asp-action="Editar">Editar dados</a>
           </li>
           <li>
-            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Meus pedidos</a>
           </li>
           <li><hr class="dropdown-divider" /></li>
           <li>
@@ -148,6 +148,7 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="~/js/publicarPedido.js" asp-append-version="true"></script>
+    <script src="~/js/editar.js" asp-append-version="true"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>

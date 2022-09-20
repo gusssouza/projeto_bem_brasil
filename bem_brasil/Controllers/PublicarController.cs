@@ -4,7 +4,7 @@ namespace bem_brasil.Controllers
 {
     public class PublicarController : Controller
     {
-       private readonly ILogger<PublicarController> _logger;
+        private readonly ILogger<PublicarController> _logger;
 
         public PublicarController(ILogger<PublicarController> logger)
         {
@@ -20,5 +20,13 @@ namespace bem_brasil.Controllers
         {
             return View();
         }
+
+        public IActionResult Editar()
+        {
+            return View();
+
+
+        }
+
     }
 }

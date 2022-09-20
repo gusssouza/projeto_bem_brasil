@@ -56,7 +56,7 @@ function publicarPedido() {
 
 
     <!-- Send button -->
-    <button class="btn btn-info btn-block" type="submit">Públicar</button>
+    <button class="btn btn-primary me-3" type="submit" style="margin-top: 25px; margin-bottom: 25px;">Públicar</button>
 
 </form>
 <!-- Default form contact -->
@@ -107,7 +107,7 @@ function publicarPedido() {
     </div>
 
     <!-- Send button -->
-    <button class="btn btn-info btn-block" type="submit">Públicar</button>
+    <button class="btn btn-primary me-3" type="submit" style="margin-top: 25px; margin-bottom: 25px;">Públicar</button>
 
 </form>
 <!-- Default form contact -->
@@ -118,7 +118,7 @@ function publicarPedido() {
         divInnerPedido.innerHTML = `<!-- Tela escolha Brinquedo -->
 <form class="text-center border border-light p-5" action="#!">
 
-    <p class="h4 mb-4">Doação</p>
+    <p class="h4 mb-4">Preciso disso</p>
 
         <label>Subject</label>
     <select class="browser-default custom-select mb-4">
@@ -160,7 +160,7 @@ function publicarPedido() {
         <!-- Subject -->
 
     <!-- Send button -->
-    <button class="btn btn-info btn-block" type="submit">Públicar</button>
+    <button class="btn btn-primary me-3" type="submit" style="margin-top: 25px; margin-bottom: 25px;">Públicar</button>
 
 </form>
 <!-- Default form contact -->`}
