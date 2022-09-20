@@ -56,7 +56,7 @@ let value = SelectPublicar.options[SelectPublicar.selectedIndex].value;
 
 
     <!-- Send button -->
-    <button class="btn btn-info btn-block" type="submit"  onclick="">Públicar</button>
+    <button class="btn btn-primary me-3" type="submit" style="margin-top: 25px; margin-bottom: 25px;">Públicar</button>
 
 </form>
 <!-- Default form contact -->
@@ -106,7 +106,7 @@ let value = SelectPublicar.options[SelectPublicar.selectedIndex].value;
     </div>
 
     <!-- Send button -->
-    <button class="btn btn-info btn-block" type="submit">Públicar</button>
+    <button class="btn btn-primary me-3" type="submit" style="margin-top: 25px; margin-bottom: 25px;">Públicar</button>
 
 </form>
 <!-- Default form contact -->
@@ -159,7 +159,7 @@ let value = SelectPublicar.options[SelectPublicar.selectedIndex].value;
         <!-- Subject -->
 
     <!-- Send button -->
-    <button class="btn btn-info btn-block" type="submit">Públicar</button>
+    <button class="btn btn-primary me-3" type="submit" style="margin-top: 25px; margin-bottom: 25px;">Públicar</button>
 
 </form>
 <!-- Default form contact -->`}
