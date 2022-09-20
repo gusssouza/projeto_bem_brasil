@@ -1,0 +1,22 @@
+﻿#divPublicar, #divPubPedido {
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+
+#selectTelaDoacao, #selectTelaPedir {
+}
+
+
+/* tela editar*/
+
+#divEditar {
+    text-align: center;
+    margin-top: 25px;
+}
+
+#h1MsgErroEditar {
+    font-size: 20px;
+    color: red;
+}

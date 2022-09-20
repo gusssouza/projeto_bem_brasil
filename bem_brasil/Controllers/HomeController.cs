@@ -19,6 +19,8 @@ namespace bem_brasil.Controllers
             _logger = logger;
         }
 
+
+
         public IActionResult Index()
         {
             return View();
@@ -44,10 +46,28 @@ namespace bem_brasil.Controllers
             return View();
         }
 
+        public IActionResult publicardoacao()
+        {
+            return View();
+        }
+
         public IActionResult Sobre()
         {
             return View();
         }
+        public IActionResult Telacomida()
+        {
+            return View();
+        }
+        public IActionResult Telaroupa()
+        {
+            return View();
+        }
+        public IActionResult Telabrinquedo()
+        {
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

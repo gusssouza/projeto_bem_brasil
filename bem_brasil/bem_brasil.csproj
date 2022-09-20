@@ -7,7 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\Home\publicar.cshtml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Home\publicar.cshtml" />
+    <Content Remove="Views\Home\publicardoacao.cshtml" />
     <Content Remove="Views\Home\registro.razor" />
+    <Content Remove="wwwroot\js\JavaScript.js" />
+    <Content Remove="wwwroot\js\JavaScript1.js" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,6 +29,23 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Home\publicar.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\Home\publicar.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Home\publicardoacao.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Home\publicardoacao.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Publicar\publicardoacao.cshtml" />
   </ItemGroup>
 
 </Project>
