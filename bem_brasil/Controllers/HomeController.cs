@@ -54,10 +54,6 @@ namespace bem_brasil.Controllers
             return View();
         }
 
-        public IActionResult publicardoacao()
-        {
-            return View();
-        }
         public IActionResult Telabrinquedo()
         {
             return View();
