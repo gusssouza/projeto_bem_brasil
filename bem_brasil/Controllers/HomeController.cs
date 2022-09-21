@@ -19,8 +19,6 @@ namespace bem_brasil.Controllers
             _logger = logger;
         }
 
-
-
         public IActionResult Index()
         {
             return View();
@@ -50,6 +48,7 @@ namespace bem_brasil.Controllers
         {
             return View();
         }
+
         public IActionResult Registro()
         {
             return View();
@@ -64,6 +63,7 @@ namespace bem_brasil.Controllers
         {
             return View();
         }
+
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

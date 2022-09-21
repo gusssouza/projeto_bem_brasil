@@ -15,7 +15,7 @@ function publicarPedido() {
 
 <form class="text-center border border-light p-5" action="#!">
 
-    <p class="h4 mb-4">Doação</p>
+    <p class="h4 mb-4">Pedido</p>
 
 
     <!-- Subject -->
@@ -36,17 +36,6 @@ function publicarPedido() {
     <!-- Validade -->
     <input type="text" id="inputLinkPedir" class="form-control mb-4" placeholder="Link imagem">
 
-    <!-- Endereco -->
-
-    <input type="text" id="inputCepPedir" class="form-control mb-4" placeholder="Cep">
-
-    <input type="text" id="inputRuaPedir" class="form-control mb-4" placeholder="Rua">
-
-    <input type="text" id="inputCidadePedir" class="form-control mb-4" placeholder="Cidade">
-
-    <input type="text" id="inputBairroPedir" class="form-control mb-4" placeholder="Bairro">
-
-    <input type="number" id="inputNumeroCasaPedir" class="form-control mb-4" placeholder="Número casa/apto">
 
     <!-- Message -->
     <div class="form-group">
@@ -54,9 +43,8 @@ function publicarPedido() {
     </div>
 
 
-
     <!-- Send button -->
-    <button class="btn btn-primary me-3" type="submit" style="margin-top: 25px; margin-bottom: 25px;">Públicar</button>
+     <a style="color: #009791"; asp-controller="Endereco" asp-action="Endereco">Teste</a>
 
 </form>
 <!-- Default form contact -->
@@ -68,7 +56,7 @@ function publicarPedido() {
 <!-- Tela escolha Roupa -->
 <form class="text-center border border-light p-5" action="#!">
 
-    <p class="h4 mb-4">Doação</p>
+    <p class="h4 mb-4">Pedido</p>
 
         <label>Subject</label>
     <select class="browser-default custom-select mb-4">
@@ -88,26 +76,13 @@ function publicarPedido() {
     <!-- Validade -->
     <input type="text" id="inputLinkPedir" class="form-control mb-4" placeholder="Link imagem">
 
-    
-    <!-- Endereco -->
-
-    <input type="text" id="inputCepPedir" class="form-control mb-4" placeholder="Cep">
-
-    <input type="text" id="inputTituloPedir" class="form-control mb-4" placeholder="Rua">
-
-    <input type="text" id="inputCidadePedir" class="form-control mb-4" placeholder="Cidade">
-
-    <input type="text" id="inputBairroPedir" class="form-control mb-4" placeholder="Bairro">
-
-    <input type="number" id="inputBairroNumPedir" class="form-control mb-4" placeholder="Número casa/apto">
-
     <!-- Message -->
     <div class="form-group">
         <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Descrição"></textarea>
     </div>
 
     <!-- Send button -->
-    <button class="btn btn-primary me-3" type="submit" style="margin-top: 25px; margin-bottom: 25px;">Públicar</button>
+         <a style="color: #009791"; asp-controller="Endereco" asp-action="Endereco">Proxímo</a>
 
 </form>
 <!-- Default form contact -->
@@ -118,7 +93,7 @@ function publicarPedido() {
         divInnerPedido.innerHTML = `<!-- Tela escolha Brinquedo -->
 <form class="text-center border border-light p-5" action="#!">
 
-    <p class="h4 mb-4">Preciso disso</p>
+    <p class="h4 mb-4">Pedido</p>
 
         <label>Subject</label>
     <select class="browser-default custom-select mb-4">
@@ -139,28 +114,15 @@ function publicarPedido() {
     <!-- Validade -->
     <input type="text" id="inputLinkPedir" class="form-control mb-4" placeholder="Link imagem">
 
-    
-    <!-- Endereco -->
-
-    <input type="text" id="inputCepPedir" class="form-control mb-4" placeholder="Cep">
-
-    <input type="text" id="inputRuaPedir" class="form-control mb-4" placeholder="Rua">
-
-    <input type="text" id="inputCidadePedir" class="form-control mb-4" placeholder="Cidade">
-
-    <input type="text" id="inputBairroPedir" class="form-control mb-4" placeholder="Bairro">
-
-    <input type="number" id="inputNumeroCasaPedir" class="form-control mb-4" placeholder="Número casa/apto">
-
     <!-- Message -->
     <div class="form-group">
         <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Descrição"></textarea>
-    </div>
+    </div>   
 
-        <!-- Subject -->
 
     <!-- Send button -->
-    <button class="btn btn-primary me-3" type="submit" style="margin-top: 25px; margin-bottom: 25px;">Públicar</button>
+
+    <a style="color: #009791"; asp-controller="Endereco" asp-action="Endereco">Proxímo</a>
 
 </form>
 <!-- Default form contact -->`}
