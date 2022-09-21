@@ -3,7 +3,7 @@
     document.getElementById('rua').value = ("");
     document.getElementById('bairro').value = ("");
     document.getElementById('cidade').value = ("");
-    document.getElementById('UF').value = ("");
+    document.getElementById('UF').value = (""); 
 }
 
 const complete = (conteudo) => {
