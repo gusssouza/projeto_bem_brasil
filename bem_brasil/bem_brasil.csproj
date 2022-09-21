@@ -7,10 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\Endereco.cs" />
+    <Compile Remove="Controllers\HomeController1.cs" />
+    <Compile Remove="Views\Endereco\teste.cshtml.cs" />
     <Compile Remove="Views\Home\publicar.cshtml.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="Views\Endereco\teste.cshtml" />
     <Content Remove="Views\Home\publicar.cshtml" />
     <Content Remove="Views\Home\publicardoacao.cshtml" />
     <Content Remove="Views\Home\registro.razor" />

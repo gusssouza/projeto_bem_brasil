@@ -5,6 +5,7 @@ function publicarPedido() {
 
     let SelectPublicarPedido = document.querySelector('#selectTelaPedir');
     let divInnerPedido = document.getElementById("divPublicarPedido");
+    let btnSubmit = document.getElementById("btnSubmit");
     let value = SelectPublicarPedido.options[SelectPublicarPedido.selectedIndex].value;
     if (value == 1) {
         tipo = "comida";
@@ -15,7 +16,7 @@ function publicarPedido() {
 
 <form class="text-center border border-light p-5" action="#!">
 
-    <p class="h4 mb-4">Doação</p>
+    <p class="h4 mb-4">Pedido</p>
 
 
     <!-- Subject -->
@@ -59,16 +60,15 @@ function publicarPedido() {
     <button class="btn btn-primary me-3" type="submit" style="margin-top: 25px; margin-bottom: 25px;">Públicar</button>
 
 </form>
-<!-- Default form contact -->
-
-`
+<!-- Default form contact -->`
+        btnSubmit.style = "visible !important;";
     } else if (value == 2) {
 
         divInnerPedido.innerHTML = `
 <!-- Tela escolha Roupa -->
 <form class="text-center border border-light p-5" action="#!">
 
-    <p class="h4 mb-4">Doação</p>
+    <p class="h4 mb-4">Pedido</p>
 
         <label>Subject</label>
     <select class="browser-default custom-select mb-4">
@@ -110,9 +110,8 @@ function publicarPedido() {
     <button class="btn btn-primary me-3" type="submit" style="margin-top: 25px; margin-bottom: 25px;">Públicar</button>
 
 </form>
-<!-- Default form contact -->
-
-`;
+<!-- Default form contact -->`
+        btnSubmit.style = "visible !important;";
     } else if (value == 3) {
 
         divInnerPedido.innerHTML = `<!-- Tela escolha Brinquedo -->
@@ -120,14 +119,7 @@ function publicarPedido() {
 
     <p class="h4 mb-4">Preciso disso</p>
 
-        <label>Subject</label>
-    <select class="browser-default custom-select mb-4">
-        <option value="" disabled></option>
-        <option value="1" selected>Inverno</option>
-        <option value="2">Verão</option>
-        <option value="3">Infantil</option>
-        <option value="4">Adulta</option>
-    </select>
+    <p class="h4 mb-4">Pedido</p>
 
     <!-- Name -->
 
@@ -156,14 +148,9 @@ function publicarPedido() {
     <div class="form-group">
         <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Descrição"></textarea>
     </div>
-
-        <!-- Subject -->
-
-    <!-- Send button -->
-    <button class="btn btn-primary me-3" type="submit" style="margin-top: 25px; margin-bottom: 25px;">Públicar</button>
-
-</form>
-<!-- Default form contact -->`}
+<!-- Default form contact -->`
+        btnSubmit.style = "visible !important;";
+    }
 }
 
 

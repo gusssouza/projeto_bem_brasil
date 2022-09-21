@@ -1,0 +1,38 @@
+﻿@{
+}
+
+<form class="text-center border border-light p-5" action="#!">
+
+    <p class="h4 mb-4">Pedido</p>
+
+
+    <!-- Subject -->
+    <label>Tipo de alimento:</label>
+    <select class="browser-default custom-select mb-4">
+        <option value="1pedido" selected>Arroz</option>
+        <option value="2pedido">Feijão</option>
+        <option value="3pedido">Carne</option>
+        <option value="4pedido">Cesta básica</option>
+    </select>
+
+    <!-- Name -->
+   <input type="text" id="inputTituloPedir" class="form-control mb-4" placeholder="Título">
+
+    <!-- Validade -->
+    <input type="text" id="inputValidadePedir" class="form-control mb-4" placeholder="Validade">
+
+    <!-- Validade -->
+    <input type="text" id="inputLinkPedir" class="form-control mb-4" placeholder="Link imagem">
+
+
+    <!-- Message -->
+    <div class="form-group">
+        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Descrição"></textarea>
+    </div>
+
+
+    <!-- Send button -->
+      <a style="color: #009791"; asp-controller="Endereco" asp-action="Endereco">Proxímo</a>
+
+</form>
+<!-- Default form contact -->
