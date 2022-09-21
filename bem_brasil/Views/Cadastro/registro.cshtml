@@ -23,48 +23,29 @@
       <div class="row d-flex justify-content-center">
         <div class="col-lg-8">
           <h2 class="fw-bold mb-5">Cadastrar-se</h2>
-          <form asp-controller="Home" asp-action="CadastrarOperador" method="post">
+          <form asp-controller="Cadastro" asp-action="CadastrarOperador" method="post">
             <!-- 2 column grid layout with text inputs for the first and last names -->
             <div class="row">
-              <div class="col-md-6 mb-4">
-                <div class="form-outline">
+                <div class="form-outline mb-4">
                   <input type="text" asp-for="Nome" id="form3Example1" class="form-control" />
                   <label class="form-label" for="form3Example1">Nome</label>
                 </div>
-              </div>
-              <div class="col-md-6 mb-4">
-                <div class="form-outline">
-                  <input type="text" asp-for="Cpf" id="form3Example2" class="form-control" />
-                  <label class="form-label" for="form3Example2">Sobrenome</label>
-                </div>
-              </div>
-            </div>
-
-             <div class="col-md-6 mb-4">
-                <div class="form-outline">
-                  <input type="text" asp-for="TipoOperador" id="form3Example2" class="form-control" />
-                  <label class="form-label" for="form3Example2">Sobrenome</label>
-                </div>
-              </div>
             
             <!-- Email input -->
             <div class="form-outline mb-4">
-              <input type="email" id="form3Example3" class="form-control" />
+              <input type="email"  asp-for="Email" id="form3Example3" class="form-control" />
               <label class="form-label" for="form3Example3">Endereço de Email </label>
+            </div>
+
+             <div class="form-outline mb-4">
+              <input type="text"  asp-for="Cpf" id="form3Example3" class="form-control" />
+              <label class="form-label" for="form3Example3">CPF</label>
             </div>
 
             <!-- Password input -->
             <div class="form-outline mb-4">
-              <input type="password" id="form3Example4" class="form-control" />
+              <input type="password" asp-for="Senha" id="form3Example4" class="form-control" />
               <label class="form-label" for="form3Example4">Senha</label>
-            </div>
-
-            <!-- Checkbox -->
-            <div class="form-check d-flex justify-content-center mb-4">
-              <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
-              <label class="form-check-label" for="form2Example33">
-                Receber nossas atualizações
-              </label>
             </div>
 
             <!-- Submit button -->

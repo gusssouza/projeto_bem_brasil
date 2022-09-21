@@ -19,6 +19,8 @@ namespace bem_brasil.Controllers
             _logger = logger;
         }
 
+
+
         public IActionResult Index()
         {
             return View();
@@ -39,16 +41,12 @@ namespace bem_brasil.Controllers
             return View();
         }
 
-        public IActionResult Login()
-        {
-            return View();
-        }
-
         public IActionResult Entrega()
         {
             return View();
         }
-        public IActionResult Registro()
+
+        public IActionResult publicardoacao()
         {
             return View();
         }
@@ -57,18 +55,24 @@ namespace bem_brasil.Controllers
         {
             return View();
         }
+        public IActionResult Telacomida()
+        {
+            return View();
+        }
+        public IActionResult Telaroupa()
+        {
+            return View();
+        }
+        public IActionResult Telabrinquedo()
+        {
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
-
-        [HttpPost]
-        public IActionResult CadastrarOperador (Operador operador)
-        {
-            _operadorRepositorio.AdicionarOperador(operador);
-            return RedirectToAction("Index");
         }
     }
 }
