@@ -22,8 +22,6 @@ namespace bem_brasil.Controllers
             _publicarRepositorio = publicarRepositorio;
         }
 
-
-
         public IActionResult Index()
         {
             var produtos = _publicarRepositorio.BuscarTodos();
@@ -55,22 +53,16 @@ namespace bem_brasil.Controllers
             return View();
         }
 
-        public IActionResult Sobre()
+        public IActionResult Registro()
         {
             return View();
         }
-        public IActionResult Telacomida()
-        {
-            return View();
-        }
-        public IActionResult Telaroupa()
-        {
-            return View();
-        }
+
         public IActionResult Telabrinquedo()
         {
             return View();
         }
+
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
