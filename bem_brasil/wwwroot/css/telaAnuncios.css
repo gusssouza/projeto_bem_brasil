@@ -70,12 +70,20 @@ body {
 /* control */
 
 .control {
-    position: absolute;
-    bottom: 20%;
-    left: 22.8%;
+    display: flex;
+    flex-direction: row;
+    margin-top:25px;
 }
+
+.first-button-size {
+    height: 300px;
+   
+}
+
+
 /* the Button */
 .btn {
+    font-family: a;
     transform: translateY(0px);
     transition: 0.3s linear;
     background: #49C608;
@@ -87,50 +95,26 @@ body {
     border: none;
     color: #eee;
     padding: 0;
-    margin: 0;
+    margin: 5px;
 }
 
     .btn:hover {
+        color: #49C608;
+        background-color: #3bca78;
         transform: translateY(-4px);
     }
 
     .btn span {
-        font-family: 'Farsan', cursive;
         transition: transform 0.3s;
         display: inline-block;
-        padding: 10px 20px;
+        padding: 10px ;
         font-size: 1.2em;
         margin: 0;
     }
 
-
-    .btn .price {
-        transform: translateX(-10%);
-        padding-right: 15px;
-    }
-
-    /* the Icon */
-    .btn .shopping-cart {
-        transform: translateX(-100%);
-        position: absolute;
-        background: #333;
-        z-index: 1;
-        left: 0;
-        top: 0;
-    }
-
-    /* buy */
     .btn .buy {
         z-index: 3;
         font-weight: bolder;
-    }
-
-    .btn:hover .price {
-        transform: translateX(-110%);
-    }
-
-    .btn:hover .shopping-cart {
-        transform: translateX(0%);
     }
 
 
