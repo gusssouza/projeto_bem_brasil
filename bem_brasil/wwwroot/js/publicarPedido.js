@@ -5,6 +5,7 @@ function publicarPedido() {
 
     let SelectPublicarPedido = document.querySelector('#selectTelaPedir');
     let divInnerPedido = document.getElementById("divPublicarPedido");
+    let btnSubmit = document.getElementById("btnSubmit");
     let value = SelectPublicarPedido.options[SelectPublicarPedido.selectedIndex].value;
     if (value == 1) {
         tipo = "comida";
@@ -43,13 +44,9 @@ function publicarPedido() {
     </div>
 
 
-    <!-- Send button -->
-     <a style="color: #009791"; asp-controller="Endereco" asp-action="Endereco">Teste</a>
-
 </form>
-<!-- Default form contact -->
-
-`
+<!-- Default form contact -->`
+        btnSubmit.style = "visible !important;";
     } else if (value == 2) {
 
         divInnerPedido.innerHTML = `
@@ -80,29 +77,14 @@ function publicarPedido() {
     <div class="form-group">
         <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Descrição"></textarea>
     </div>
-
-    <!-- Send button -->
-         <a style="color: #009791"; asp-controller="Endereco" asp-action="Endereco">Proxímo</a>
-
 </form>
-<!-- Default form contact -->
-
-`;
+<!-- Default form contact -->`
+        btnSubmit.style = "visible !important;";
     } else if (value == 3) {
 
         divInnerPedido.innerHTML = `<!-- Tela escolha Brinquedo -->
-<form class="text-center border border-light p-5" action="#!">
 
     <p class="h4 mb-4">Pedido</p>
-
-        <label>Subject</label>
-    <select class="browser-default custom-select mb-4">
-        <option value="" disabled></option>
-        <option value="1" selected>Inverno</option>
-        <option value="2">Verão</option>
-        <option value="3">Infantil</option>
-        <option value="4">Adulta</option>
-    </select>
 
     <!-- Name -->
 
@@ -118,14 +100,9 @@ function publicarPedido() {
     <div class="form-group">
         <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Descrição"></textarea>
     </div>   
-
-
-    <!-- Send button -->
-
-    <a style="color: #009791"; asp-controller="Endereco" asp-action="Endereco">Proxímo</a>
-
-</form>
-<!-- Default form contact -->`}
+<!-- Default form contact -->`
+        btnSubmit.style = "visible !important;";
+    }
 }
 
 
