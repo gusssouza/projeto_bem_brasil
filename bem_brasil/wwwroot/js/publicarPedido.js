@@ -37,12 +37,27 @@ function publicarPedido() {
     <!-- Validade -->
     <input type="text" id="inputLinkPedir" class="form-control mb-4" placeholder="Link imagem">
 
+    <!-- Endereco -->
+
+    <input type="text" id="inputCepPedir" class="form-control mb-4" placeholder="Cep">
+
+    <input type="text" id="inputRuaPedir" class="form-control mb-4" placeholder="Rua">
+
+    <input type="text" id="inputCidadePedir" class="form-control mb-4" placeholder="Cidade">
+
+    <input type="text" id="inputBairroPedir" class="form-control mb-4" placeholder="Bairro">
+
+    <input type="number" id="inputNumeroCasaPedir" class="form-control mb-4" placeholder="Número casa/apto">
 
     <!-- Message -->
     <div class="form-group">
         <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Descrição"></textarea>
     </div>
 
+
+
+    <!-- Send button -->
+    <button class="btn btn-primary me-3" type="submit" style="margin-top: 25px; margin-bottom: 25px;">Públicar</button>
 
 </form>
 <!-- Default form contact -->`
@@ -73,16 +88,36 @@ function publicarPedido() {
     <!-- Validade -->
     <input type="text" id="inputLinkPedir" class="form-control mb-4" placeholder="Link imagem">
 
+    
+    <!-- Endereco -->
+
+    <input type="text" id="inputCepPedir" class="form-control mb-4" placeholder="Cep">
+
+    <input type="text" id="inputTituloPedir" class="form-control mb-4" placeholder="Rua">
+
+    <input type="text" id="inputCidadePedir" class="form-control mb-4" placeholder="Cidade">
+
+    <input type="text" id="inputBairroPedir" class="form-control mb-4" placeholder="Bairro">
+
+    <input type="number" id="inputBairroNumPedir" class="form-control mb-4" placeholder="Número casa/apto">
+
     <!-- Message -->
     <div class="form-group">
         <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Descrição"></textarea>
     </div>
+
+    <!-- Send button -->
+    <button class="btn btn-primary me-3" type="submit" style="margin-top: 25px; margin-bottom: 25px;">Públicar</button>
+
 </form>
 <!-- Default form contact -->`
         btnSubmit.style = "visible !important;";
     } else if (value == 3) {
 
         divInnerPedido.innerHTML = `<!-- Tela escolha Brinquedo -->
+<form class="text-center border border-light p-5" action="#!">
+
+    <p class="h4 mb-4">Preciso disso</p>
 
     <p class="h4 mb-4">Pedido</p>
 
@@ -96,10 +131,23 @@ function publicarPedido() {
     <!-- Validade -->
     <input type="text" id="inputLinkPedir" class="form-control mb-4" placeholder="Link imagem">
 
+    
+    <!-- Endereco -->
+
+    <input type="text" id="inputCepPedir" class="form-control mb-4" placeholder="Cep">
+
+    <input type="text" id="inputRuaPedir" class="form-control mb-4" placeholder="Rua">
+
+    <input type="text" id="inputCidadePedir" class="form-control mb-4" placeholder="Cidade">
+
+    <input type="text" id="inputBairroPedir" class="form-control mb-4" placeholder="Bairro">
+
+    <input type="number" id="inputNumeroCasaPedir" class="form-control mb-4" placeholder="Número casa/apto">
+
     <!-- Message -->
     <div class="form-group">
         <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Descrição"></textarea>
-    </div>   
+    </div>
 <!-- Default form contact -->`
         btnSubmit.style = "visible !important;";
     }

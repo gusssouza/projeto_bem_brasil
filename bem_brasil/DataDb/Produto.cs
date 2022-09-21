@@ -17,6 +17,8 @@ namespace bem_brasil.DataDb
         public DateTime? Validade { get; set; }
         public int? QtdProduto { get; set; }
         public int? TipoProduto { get; set; }
+        public string? LinkImagem { get; set; }
+        public string? Tamanho { get; set; }
 
         public virtual ICollection<Doaco> Doacos { get; set; }
     }
