@@ -1,4 +1,5 @@
-﻿using System;
+﻿using bem_brasil.Enums;
+using System;
 using System.Collections.Generic;
 
 #nullable disable
@@ -16,7 +17,7 @@ namespace bem_brasil.DataDb
         public string Descricao { get; set; }
         public DateTime? Validade { get; set; }
         public int? QtdProduto { get; set; }
-        public int? TipoProduto { get; set; }
+        public TipoProduto? TipoProduto { get; set; }
         public string? LinkImagem { get; set; }
         public string? Tamanho { get; set; }
 

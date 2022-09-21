@@ -1,4 +1,7 @@
-﻿@{
+﻿@using bem_brasil.DataDb
+@using bem_brasil.Extensions
+@model List<Produto>
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -6,58 +9,25 @@
     <h1 class="tituloIndex">Quero doar:</h1>
     <div class="row">
 
-<div class="col">
-<div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-        <h5 class="card-title">Comida</h5>
-        <h3 id="cardItens" class="card-text">Descrição:</h3>
-        <h3 id="cardItens" class="card-text">Validade:</h3>
-        <h3 id="cardItens" class="card-text">Quantidade:</h3>
-        <h3 id="cardItens" class="card-text">Localização:</h3>
-    <a class="btn btn-primary" style="
-      background-color: #3bca78;
-      box-shadow: 0 4px 9px -4px #2c9f4a;" asp-controller="Home" asp-action="Telacomida">Doar</a>
-    </div>
-  </div>
-</div>
 
-<div class="col">
-  <div class="card" style="width: 18rem;">
-      <img src="" class="card-img-top" alt="...">
-      <div class="card-body">
-      <h5 class="card-title">Roupa</h5>
-      <h3 id="cardItens" class="card-text">Descrição:</h3>
-      <h3 id="cardItens" class="card-text">Quantidade:</h3>
-      <h3 id="cardItens" class="card-text">Tamanho:</h3>
-      <h3 id="cardItens" class="card-text">Localização:</h3>
-      <a class="btn btn-primary" style="
-      background-color: #3bca78;
-      box-shadow: 0 4px 9px -4px #2c9f4a;" asp-controller="Home" asp-action="Telaroupa">Doar</a>
-    </div>  
-   </div> 
-</div>
-
-
-
-<div class="col">
-
-    <div class="card" style="width: 18rem;">
-        <img src="" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Brinquedo</h5>
-          <h3 id="cardItens" class="card-text">Descrição:</h3>
-          <h3 id="cardItens" class="card-text">Quantidade:</h3>
-          <h3 id="cardItens" class="card-text">Localização:</h3>
-      
-          <a class="btn btn-primary" style="
-          background-color: #3bca78;
-          box-shadow: 0 4px 9px -4px #2c9f4a;" asp-controller="Home" asp-action="Telabrinquedo">Doar</a>
-    </div>  
-
-        </div>
-    </div>
-</div>
+            @foreach(var produtod in Model)
+            {
+                <div class="col">
+                 <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">@produtod.TipoProduto.GetDisplayName()</h5>
+                        <h3 id="cardItens" class="card-text">Descrição: @produtod.Descricao</h3>
+                        <h3 id="cardItens" class="card-text">Validade: @produtod.Validade</h3>
+                        <h3 id="cardItens" class="card-text">Quantidade: @produtod.QtdProduto</h3>
+                        <h3 id="cardItens" class="card-text">Localização:</h3>
+                    <a class="btn btn-primary" style="
+                      background-color: #3bca78;
+                      box-shadow: 0 4px 9px -4px #2c9f4a;" asp-controller="Home" asp-action="Telacomida">Doar</a>
+                    </div>
+                  </div>
+                  </div>
+            }
 </div>
 
 

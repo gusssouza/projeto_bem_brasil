@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<bemBrasil_SPBContext>();
 builder.Services.AddScoped<IOperadorRepositorio, OperadorRepositorio>();
+builder.Services.AddScoped<IPublicarRepositorio, PublicarRepositorio>();
 
 var app = builder.Build();
 

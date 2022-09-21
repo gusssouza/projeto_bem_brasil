@@ -1,9 +1,14 @@
-﻿namespace bem_brasil.Enums
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace bem_brasil.Enums
 {
     public enum TipoProduto
     {
-        Alimenticio = 0,
-        Brinquedo = 1,
-        Roupas = 2,
+        [Display(Name = "Alimentício")]
+        Alimenticio = 1,
+        [Display(Name = "Brinquedo")]
+        Brinquedo = 2,
+        [Display(Name = "Roupas")]
+        Roupas = 3,
     }
 }
