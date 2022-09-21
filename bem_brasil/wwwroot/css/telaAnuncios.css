@@ -74,6 +74,50 @@ body {
     margin-left: 15%;
 }
 
+.first-button-size {
+    height: 300px;
+   
+}
+
+
+/* the Button */
+.btn {
+    font-family: a;
+    transform: translateY(0px);
+    transition: 0.3s linear;
+    background: #49C608;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #eee;
+    padding: 0;
+    margin: 5px;
+}
+
+    .btn:hover {
+        color: #49C608;
+        background-color: #3bca78;
+        transform: translateY(-4px);
+    }
+
+    .btn span {
+        transition: transform 0.3s;
+        display: inline-block;
+        padding: 10px ;
+        font-size: 1.2em;
+        margin: 0;
+    }
+
+    .btn .buy {
+        z-index: 3;
+        font-weight: bolder;
+    }
+
+
+
 /* product image  */
 .product-image {
     transition: all 0.3s ease-out;
