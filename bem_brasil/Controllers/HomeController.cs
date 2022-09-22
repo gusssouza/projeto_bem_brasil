@@ -60,6 +60,11 @@ namespace bem_brasil.Controllers
             return View();
         }
 
+        public IActionResult chat()
+        {
+            return View();
+        }
+
         public IActionResult Sobre()
         {
             return View();
