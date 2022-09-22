@@ -64,19 +64,10 @@ namespace bem_brasil.Controllers
         {
             return View();
         }
-        public IActionResult Telacomida()
+        public IActionResult Tela()
         {
             return View();
         }
-        public IActionResult Telaroupa()
-        {
-            return View();
-        }
-        public IActionResult Telabrinquedo()
-        {
-            return View();
-        }
-
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
