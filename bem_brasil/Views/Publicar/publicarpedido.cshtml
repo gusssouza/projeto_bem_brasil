@@ -5,124 +5,15 @@
 
 <div id="divPubPedido">
 
-
 <label>Escolha o tipo de item que você precisa</label>
 
-<select id="selectTelaPedir" class="browser-default custom-select mb-4" style="width: 200px;" onchange="publicarPedido()">
-  <option value="1" selected>Comida</option>
-  <option value="2">Roupa</option>
-  <option value="3">Brinquedo</option>
-</select>
-
+<div class="d-grid gap-2 d-md-block" style="text-align: center;">
+  <a class="btn btn-primary" type="button" asp-controller="Publicar" asp-action="PrecisoComida">Comida</a>
+  <a class="btn btn-primary" type="button" asp-controller="Publicar" asp-action="PrecisoRoupa">Roupa</a>
+  <a class="btn btn-primary" type="button" asp-controller="Publicar" asp-action="PrecisoBrinquedo">Brinquedo</a>
 </div>
 
-
-
-<form class="text-center border border-light p-5" action="#!">
-
-<div id="divPublicarComida" style="visibility: hidden;">
-
-    <form class="text-center border border-light p-5" action="#!">
-
-    <p class="h4 mb-4">Pedido</p>
-
-    <label>Tipo de alimento:</label>
-    <select class="browser-default custom-select mb-4">
-        <option value="1pedido" selected>Arroz</option>
-        <option value="2pedido">Feijão</option>
-        <option value="3pedido">Carne</option>
-        <option value="4pedido">Cesta básica</option>
-    </select>
-
-    <input type="text" id="inputTituloPedir" class="form-control mb-4" placeholder="Título">
-    <input type="text" id="inputValidadePedir" class="form-control mb-4" placeholder="Validade">
-    <input type="text" id="inputLinkPedir" class="form-control mb-4" placeholder="Link imagem">
-    <input type="text" id="inputCepPedir" class="form-control mb-4" placeholder="Cep">
-    <input type="text" id="inputRuaPedir" class="form-control mb-4" placeholder="Rua">
-    <input type="text" id="inputCidadePedir" class="form-control mb-4" placeholder="Cidade">
-    <input type="text" id="inputBairroPedir" class="form-control mb-4" placeholder="Bairro">
-    <input type="number" id="inputNumeroCasaPedir" class="form-control mb-4" placeholder="Número casa/apto">
-
-    <div class="form-group">
-        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Descrição"></textarea>
-    </div>
-
-    <button class="btn btn-primary me-3" type="submit" style="margin-top: 25px; margin-bottom: 25px;">Públicar</button>
-
-</form>
-
-
 </div>
-
-
-<div id="divPublicarRoupa" style="visibility: hidden;">
-
-<!-- Tela escolha Roupa -->
-<form class="text-center border border-light p-5" action="#!">
-
-    <p class="h4 mb-4">Pedido</p>
-
-        <label>Subject</label>
-    <select class="browser-default custom-select mb-4">
-        <option value="" disabled>Tipo de roupa</option>
-        <option value="1" selected>Inverno</option>
-        <option value="2">Verão</option>
-        <option value="3">Infantil</option>
-        <option value="4">Adulta</option>
-    </select>
-
-    <input type="text" id="inputTituloPedir" class="form-control mb-4" placeholder="Título">
-    <input type="number" id="inputTamanhoPedir" class="form-control mb-4" placeholder="Tamanho">
-    <input type="text" id="inputLinkPedir" class="form-control mb-4" placeholder="Link imagem">
-    <input type="text" id="inputCepPedir" class="form-control mb-4" placeholder="Cep">
-    <input type="text" id="inputTituloPedir" class="form-control mb-4" placeholder="Rua">
-    <input type="text" id="inputCidadePedir" class="form-control mb-4" placeholder="Cidade">
-    <input type="text" id="inputBairroPedir" class="form-control mb-4" placeholder="Bairro">
-    <input type="number" id="inputBairroNumPedir" class="form-control mb-4" placeholder="Número casa/apto">
-
-    <div class="form-group">
-        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Descrição"></textarea>
-    </div>
-
-    <button class="btn btn-primary me-3" type="submit" style="margin-top: 25px; margin-bottom: 25px;">Públicar</button>
-
-</form>
-
-</div>
-
-
-<div id="divPublicarBrinquedo" style="visibility: hidden;">
-<!-- Tela escolha Brinquedo -->
-
-<form class="text-center border border-light p-5" action="#!">
-
-    <p class="h4 mb-4">Pedido</p>
-
-    <input type="text" id="inputTituloPedir" class="form-control mb-4" placeholder="Título">
-
-    <input type="number" id="inputQuantPedir" class="form-control mb-4" placeholder="Quantidade">
-
-    <input type="text" id="inputLinkPedir" class="form-control mb-4" placeholder="Link imagem">
-
-    <input type="text" id="inputCepPedir" class="form-control mb-4" placeholder="Cep">
-
-    <input type="text" id="inputRuaPedir" class="form-control mb-4" placeholder="Rua">
-
-    <input type="text" id="inputCidadePedir" class="form-control mb-4" placeholder="Cidade">
-
-    <input type="text" id="inputBairroPedir" class="form-control mb-4" placeholder="Bairro">
-
-    <input type="number" id="inputNumeroCasaPedir" class="form-control mb-4" placeholder="Número casa/apto">
-
-    <div class="form-group">
-        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Descrição"></textarea>
-    </div>
-    </form>
-</div>
-
- <button type="submit" id="btnSubmit" style="visibility: hidden; color: #009791;" asp-controller="Endereco" asp-action="Endereco">Proxímo</button>
-
-</form>
 
 
 
