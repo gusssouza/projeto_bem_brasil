@@ -74,11 +74,6 @@ body {
     margin-left: 15%;
 }
 
-.first-button-size {
-    height: 300px;
-   
-}
-
 
 /* the Button */
 .btn {
@@ -95,28 +90,18 @@ body {
     color: #eee;
     padding: 0;
     margin: 5px;
+    font-size: 1.2em;
+    font-weight: bolder;
+    z-index: 3;
+    padding:0px;
 }
 
     .btn:hover {
-        color: #49C608;
+        color: white;
         background-color: #3bca78;
         transform: translateY(-4px);
     }
-
-    .btn span {
-        transition: transform 0.3s;
-        display: inline-block;
-        padding: 10px ;
-        font-size: 1.2em;
-        margin: 0;
-    }
-
-    .btn .buy {
-        z-index: 3;
-        font-weight: bolder;
-    }
-
-
+   
 
 /* product image  */
 .product-image {
