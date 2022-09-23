@@ -24,9 +24,34 @@ namespace bem_brasil.Controllers
         public IActionResult Editar()
         {
             return View();
-
-
         }
 
+        public IActionResult doacaoComida()
+        {
+            return View();
+        }
+
+        public IActionResult doacaoRoupa()
+        {
+            return View();
+        }
+        public IActionResult doacaoBrinquedo()
+        {
+            return View();
+        }
+
+        public IActionResult precisoComida()
+        {
+            return View();
+        }
+
+        public IActionResult precisoRoupa()
+        {
+            return View();
+        }
+        public IActionResult precisoBrinquedo()
+        {
+            return View();
+        }
     }
 }
