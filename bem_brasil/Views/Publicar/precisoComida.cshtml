@@ -3,7 +3,7 @@
 
 
 
-<div id="divPublicarComida" style="visibility: hidden;">
+<div id="divPublicarComida">
 
     <form class="text-center border border-light p-5" action="#!">
 
@@ -20,10 +20,11 @@
     <input type="text" id="inputTituloPedir" class="form-control mb-4" placeholder="Título">
     <input type="text" id="inputValidadePedir" class="form-control mb-4" placeholder="Validade">
     <input type="text" id="inputLinkPedir" class="form-control mb-4" placeholder="Link imagem">
-    <input type="text" id="inputCepPedir" class="form-control mb-4" placeholder="Cep">
-    <input type="text" id="inputRuaPedir" class="form-control mb-4" placeholder="Rua">
-    <input type="text" id="inputCidadePedir" class="form-control mb-4" placeholder="Cidade">
-    <input type="text" id="inputBairroPedir" class="form-control mb-4" placeholder="Bairro">
+    <input type="text" id="cepPedirComida" class="form-control mb-4" placeholder="Cep" onblur="pesquisa_pc()">
+    <input type="text" id="ruaPedirComida" class="form-control mb-4" placeholder="Rua">
+    <input type="text" id="cidadePedirComida" class="form-control mb-4" placeholder="Cidade">
+    <input type="text" id="bairroPedirComida" class="form-control mb-4" placeholder="Bairro">
+    <input type="text" id="ufPedirComida" class="form-control mb-4" placeholder="UF">
     <input type="number" id="inputNumeroCasaPedir" class="form-control mb-4" placeholder="Número casa/apto">
 
     <div class="form-group">
