@@ -11,7 +11,7 @@ namespace bem_brasil.Controllers
             _logger = logger;
         }
 
-        public IActionResult Editar()
+        public IActionResult Editara()
         {
             return View();
         }
