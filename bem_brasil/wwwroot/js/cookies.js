@@ -1,6 +1,7 @@
 ﻿const setCookie = (name, value, expires) => {
     var cookie = name + "=" + escape(value) + ((duration) ? "; expires=" + expires.toUTCString() + ";path=/" : "");
     document.cookie = cookie;
+    console.log(document.cookie);
 }
 
 const getCookie = (name) => {
@@ -17,12 +18,10 @@ const getCookie = (name) => {
         }
 
     } else {
-        console.log(begin);
         begin += 2;
     }
 
     var end = cookies.indexOf(";", begin);
-    console.log(begin, end);
 
     if (end == -1) {
         end = cookies.length;
@@ -47,6 +46,4 @@ const salvar_cookies = () => {
         setCookie("login", login, now);
         setCookie("senha", senha, now);
     }
-
-    
 }
