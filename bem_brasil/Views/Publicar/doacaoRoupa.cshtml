@@ -1,0 +1,40 @@
+﻿@{
+        ViewData["Title"] = "Doar - Roupa";
+ }
+
+<div id="divDoarRoupa">
+
+<!-- Tela escolha Roupa -->
+<form class="text-center border border-light p-5" action="#!">
+
+     <a class="btn btn-primary mb-3" type="button" asp-controller="Publicar" asp-action="Publicardoacao">Voltar</a><p class="h4 mb-4">Doar - Roupa</p>
+
+        <label>Subject</label>
+    <select class="browser-default custom-select mb-4">
+        <option value="" disabled>Tipo de roupa</option>
+        <option value="1" selected>Inverno</option>
+        <option value="2">Verão</option>
+        <option value="3">Infantil</option>
+        <option value="4">Adulta</option>
+    </select>
+
+    <input type="text" id="inputTituloDoar" class="form-control mb-4" placeholder="Título">
+    <input type="number" id="inputTamanhoDoar" class="form-control mb-4" placeholder="Tamanho">
+    <input type="text" id="inputLinkDoar" class="form-control mb-4" placeholder="Link imagem">
+    <input type="text" id="inputCepDoar" class="form-control mb-4" placeholder="Cep">
+    <input type="text" id="inputTituloDoar" class="form-control mb-4" placeholder="Rua">
+    <input type="text" id="inputCidadeDoar" class="form-control mb-4" placeholder="Cidade">
+    <input type="text" id="inputBairroDoar" class="form-control mb-4" placeholder="Bairro">
+    <input type="number" id="inputBairroNumDoar" class="form-control mb-4" placeholder="Número casa/apto">
+
+    <div class="form-group">
+        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Descrição"></textarea>
+    </div>
+
+    <button class="btn btn-primary me-3" type="submit" style="margin-top: 25px; margin-bottom: 25px;">Públicar</button>
+
+</form>
+
+</div>
+
+

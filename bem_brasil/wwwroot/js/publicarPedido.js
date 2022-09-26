@@ -4,170 +4,34 @@ var tipo = "";
 function publicarPedido() {
 
     let SelectPublicarPedido = document.querySelector('#selectTelaPedir');
-    let divInnerPedido = document.getElementById("divPublicarPedido");
+    let btnSubmit = document.getElementById("btnSubmit");
     let value = SelectPublicarPedido.options[SelectPublicarPedido.selectedIndex].value;
+
+    let divPublicarComida = document.getElementById("divPublicarComida");
+    let divPublicarRoupa = document.getElementById("divPublicarRoupa");
+    let divPublicarBrinquedo = document.getElementById("divPublicarBrinquedo");
+
+
     if (value == 1) {
         tipo = "comida";
-        divInnerPedido.innerHTML = `
+        btnSubmit.style = "visible !important;";
+        divPublicarComida.style = "visible !important;";
+        divPublicarRoupa.style = "hidden !important;";
+        divPublicarBrinquedo.style = "hidden !important;";
 
-
-<!-- Default form contact -->
-
-<form class="text-center border border-light p-5" action="#!">
-
-    <p class="h4 mb-4">Doação</p>
-
-
-    <!-- Subject -->
-    <label>Tipo de alimento:</label>
-    <select class="browser-default custom-select mb-4">
-        <option value="1pedido" selected>Arroz</option>
-        <option value="2pedido">Feijão</option>
-        <option value="3pedido">Carne</option>
-        <option value="4pedido">Cesta básica</option>
-    </select>
-
-    <!-- Name -->
-   <input type="text" id="inputTituloPedir" class="form-control mb-4" placeholder="Título">
-
-    <!-- Validade -->
-    <input type="text" id="inputValidadePedir" class="form-control mb-4" placeholder="Validade">
-
-    <!-- Validade -->
-    <input type="text" id="inputLinkPedir" class="form-control mb-4" placeholder="Link imagem">
-
-    <!-- Endereco -->
-
-    <input type="text" id="inputCepPedir" class="form-control mb-4" placeholder="Cep">
-
-    <input type="text" id="inputRuaPedir" class="form-control mb-4" placeholder="Rua">
-
-    <input type="text" id="inputCidadePedir" class="form-control mb-4" placeholder="Cidade">
-
-    <input type="text" id="inputBairroPedir" class="form-control mb-4" placeholder="Bairro">
-
-    <input type="number" id="inputNumeroCasaPedir" class="form-control mb-4" placeholder="Número casa/apto">
-
-    <!-- Message -->
-    <div class="form-group">
-        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Descrição"></textarea>
-    </div>
-
-
-
-    <!-- Send button -->
-    <button class="btn btn-primary me-3" type="submit" style="margin-top: 25px; margin-bottom: 25px;">Públicar</button>
-
-</form>
-<!-- Default form contact -->
-
-`
     } else if (value == 2) {
+        divPublicarRoupa.style = "visible !important;";
+        btnSubmit.style = "visible !important;";
+        divPublicarComida.style = "hidden !important;";
+        divPublicarBrinquedo.style = "hidden !important;";
 
-        divInnerPedido.innerHTML = `
-<!-- Tela escolha Roupa -->
-<form class="text-center border border-light p-5" action="#!">
-
-    <p class="h4 mb-4">Doação</p>
-
-        <label>Subject</label>
-    <select class="browser-default custom-select mb-4">
-        <option value="" disabled>Tipo de roupa</option>
-        <option value="1" selected>Inverno</option>
-        <option value="2">Verão</option>
-        <option value="3">Infantil</option>
-        <option value="4">Adulta</option>
-    </select>
-
-    <!-- Name -->
-    <input type="text" id="inputTituloPedir" class="form-control mb-4" placeholder="Título">
-
-    <!-- Validade -->
-    <input type="number" id="inputTamanhoPedir" class="form-control mb-4" placeholder="Tamanho">
-
-    <!-- Validade -->
-    <input type="text" id="inputLinkPedir" class="form-control mb-4" placeholder="Link imagem">
-
-    
-    <!-- Endereco -->
-
-    <input type="text" id="inputCepPedir" class="form-control mb-4" placeholder="Cep">
-
-    <input type="text" id="inputTituloPedir" class="form-control mb-4" placeholder="Rua">
-
-    <input type="text" id="inputCidadePedir" class="form-control mb-4" placeholder="Cidade">
-
-    <input type="text" id="inputBairroPedir" class="form-control mb-4" placeholder="Bairro">
-
-    <input type="number" id="inputBairroNumPedir" class="form-control mb-4" placeholder="Número casa/apto">
-
-    <!-- Message -->
-    <div class="form-group">
-        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Descrição"></textarea>
-    </div>
-
-    <!-- Send button -->
-    <button class="btn btn-primary me-3" type="submit" style="margin-top: 25px; margin-bottom: 25px;">Públicar</button>
-
-</form>
-<!-- Default form contact -->
-
-`;
     } else if (value == 3) {
-
-        divInnerPedido.innerHTML = `<!-- Tela escolha Brinquedo -->
-<form class="text-center border border-light p-5" action="#!">
-
-    <p class="h4 mb-4">Preciso disso</p>
-
-        <label>Subject</label>
-    <select class="browser-default custom-select mb-4">
-        <option value="" disabled></option>
-        <option value="1" selected>Inverno</option>
-        <option value="2">Verão</option>
-        <option value="3">Infantil</option>
-        <option value="4">Adulta</option>
-    </select>
-
-    <!-- Name -->
-
-    <input type="text" id="inputTituloPedir" class="form-control mb-4" placeholder="Título">
-
-    <!-- Validade -->
-    <input type="number" id="inputQuantPedir" class="form-control mb-4" placeholder="Quantidade">
-
-    <!-- Validade -->
-    <input type="text" id="inputLinkPedir" class="form-control mb-4" placeholder="Link imagem">
-
-    
-    <!-- Endereco -->
-
-    <input type="text" id="inputCepPedir" class="form-control mb-4" placeholder="Cep">
-
-    <input type="text" id="inputRuaPedir" class="form-control mb-4" placeholder="Rua">
-
-    <input type="text" id="inputCidadePedir" class="form-control mb-4" placeholder="Cidade">
-
-    <input type="text" id="inputBairroPedir" class="form-control mb-4" placeholder="Bairro">
-
-    <input type="number" id="inputNumeroCasaPedir" class="form-control mb-4" placeholder="Número casa/apto">
-
-    <!-- Message -->
-    <div class="form-group">
-        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Descrição"></textarea>
-    </div>
-
-        <!-- Subject -->
-
-    <!-- Send button -->
-    <button class="btn btn-primary me-3" type="submit" style="margin-top: 25px; margin-bottom: 25px;">Públicar</button>
-
-</form>
-<!-- Default form contact -->`}
+        divPublicarBrinquedo.style = "visible !important;";
+        btnSubmit.style = "visible !important;";
+        divPublicarRoupa.style = "hidden !important;";
+        divPublicarComida.style = "hidden !important;";
+    }
 }
-
-
-
 
 
 
