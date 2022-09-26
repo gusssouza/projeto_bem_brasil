@@ -11,22 +11,18 @@
     <Compile Remove="Views\NovaPasta1\**" />
     <Compile Remove="Views\NovaPasta2\**" />
     <Compile Remove="Views\NovaPasta3\**" />
-    <Compile Remove="Views\NovaPasta\**" />
     <Content Remove="Views\Endereco\**" />
     <Content Remove="Views\NovaPasta1\**" />
     <Content Remove="Views\NovaPasta2\**" />
     <Content Remove="Views\NovaPasta3\**" />
-    <Content Remove="Views\NovaPasta\**" />
     <EmbeddedResource Remove="Views\Endereco\**" />
     <EmbeddedResource Remove="Views\NovaPasta1\**" />
     <EmbeddedResource Remove="Views\NovaPasta2\**" />
     <EmbeddedResource Remove="Views\NovaPasta3\**" />
-    <EmbeddedResource Remove="Views\NovaPasta\**" />
     <None Remove="Views\Endereco\**" />
     <None Remove="Views\NovaPasta1\**" />
     <None Remove="Views\NovaPasta2\**" />
     <None Remove="Views\NovaPasta3\**" />
-    <None Remove="Views\NovaPasta\**" />
   </ItemGroup>
 
   <ItemGroup>

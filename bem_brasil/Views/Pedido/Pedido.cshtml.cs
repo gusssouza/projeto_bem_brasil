@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace bem_brasil.Views.Home.EditarExcluirItem
+namespace bem_brasil.Views.Pedido
 {
-    public class EditarModel : PageModel
+    public class PedidoModel : PageModel
     {
         public void OnGet()
         {
