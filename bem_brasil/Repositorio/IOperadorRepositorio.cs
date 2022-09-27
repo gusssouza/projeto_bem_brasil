@@ -1,5 +1,4 @@
-﻿using bem_brasil.DataDb;
-using bem_brasil.Models;
+﻿using bem_brasil.Data;
 
 namespace bem_brasil.Repositorio
 {
