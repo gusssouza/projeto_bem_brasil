@@ -8,14 +8,9 @@
 <div id="divPublicar">
 <label>Escolha o tipo de item que você deseja doar</label>
 
-<select id="selectTelaDoacao" class="browser-default custom-select mb-4" style="width: 200px;" onchange="publicar()">
-  <option value="1" selected>Comida</option>
-  <option value="2">Roupa</option>
-  <option value="3">Brinquedo</option>
-</select>
+<div class="d-grid gap-2 d-md-block" style="text-align: center;">
+  <a class="btn btn-primary" type="button" asp-controller="Publicar" asp-action="DoacaoComida">Comida</a>
+  <a class="btn btn-primary" type="button" asp-controller="Publicar" asp-action="DoacaoRoupa">Roupa</a>
+  <a class="btn btn-primary" type="button" asp-controller="Publicar" asp-action="DoacaoBrinquedo">Brinquedo</a>
 </div>
-
-
-<div id="divPublicarDoacao">
 </div>
-    

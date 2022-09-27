@@ -5,19 +5,16 @@
 
 <div id="divPubPedido">
 
-
 <label>Escolha o tipo de item que você precisa</label>
 
-<select id="selectTelaPedir" class="browser-default custom-select mb-4" style="width: 200px;" onchange="publicarPedido()">
-  <option value="1" selected>Comida</option>
-  <option value="2">Roupa</option>
-  <option value="3">Brinquedo</option>
-</select>
+<div class="d-grid gap-2 d-md-block" style="text-align: center;">
+  <a class="btn btn-primary" type="button" asp-controller="Publicar" asp-action="PrecisoComida">Comida</a>
+  <a class="btn btn-primary" type="button" asp-controller="Publicar" asp-action="PrecisoRoupa">Roupa</a>
+  <a class="btn btn-primary" type="button" asp-controller="Publicar" asp-action="PrecisoBrinquedo">Brinquedo</a>
+</div>
 
 </div>
 
-<div id="divPublicarPedido">
-</div>
 
 
 

@@ -1,8 +1,6 @@
-﻿using bem_brasil.DataDb;
-using bem_brasil.Models;
+﻿using bem_brasil.Models;
 using bem_brasil.Repositorio;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using System.Diagnostics;
 
 namespace bem_brasil.Controllers
@@ -18,8 +16,6 @@ namespace bem_brasil.Controllers
             _operadorRepositorio = operadorRepositorio;
             _logger = logger;
         }
-
-
 
         public IActionResult Index()
         {
@@ -51,23 +47,21 @@ namespace bem_brasil.Controllers
             return View();
         }
 
-        public IActionResult Sobre()
+        public IActionResult Registro()
         {
             return View();
         }
-        public IActionResult Telacomida()
-        {
-            return View();
-        }
-        public IActionResult Telaroupa()
-        {
-            return View();
-        }
+
         public IActionResult Telabrinquedo()
         {
             return View();
         }
         public IActionResult Telasalvos()
+        {
+            return View();
+        }
+
+        public IActionResult Sobre()
         {
             return View();
         }
