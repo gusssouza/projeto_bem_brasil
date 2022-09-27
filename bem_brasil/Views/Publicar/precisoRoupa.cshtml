@@ -7,7 +7,8 @@
 <!-- Tela escolha Roupa -->
 <form class="text-center border border-light p-5" action="#!">
 
-      <a class="btn btn-primary mb-3" type="button" asp-controller="Publicar" asp-action="Publicarpedido">Voltar</a><p class="h4 mb-4">Preciso - Roupa</p>
+      <a class="btn btn-primary mb-3" type="button" asp-controller="Publicar" asp-action="Publicarpedido" style="background-color: #3bca78;
+    box-shadow: 0 4px 9px -4px #2c9f4a;">Voltar</a><p class="h4 mb-4">Preciso - Roupa</p>
 
         <label>Subject</label>
     <select class="browser-default custom-select mb-4">
@@ -18,20 +19,30 @@
         <option value="4">Adulta</option>
     </select>
 
-    <input type="text" id="inputTituloPedir" class="form-control mb-4" placeholder="Título">
-    <input type="number" id="inputTamanhoPedir" class="form-control mb-4" placeholder="Tamanho">
-    <input type="text" id="inputLinkPedir" class="form-control mb-4" placeholder="Link imagem">
-    <input type="text" id="inputCepPedir" class="form-control mb-4" placeholder="Cep">
-    <input type="text" id="inputTituloPedir" class="form-control mb-4" placeholder="Rua">
-    <input type="text" id="inputCidadePedir" class="form-control mb-4" placeholder="Cidade">
-    <input type="text" id="inputBairroPedir" class="form-control mb-4" placeholder="Bairro">
-    <input type="number" id="inputBairroNumPedir" class="form-control mb-4" placeholder="Número casa/apto">
+    <input type="text" id="tituloPedirRoupa" class="form-control mb-4" placeholder="Título">
+
+    <input type="number" id="quantPedirRoupa" class="form-control mb-4" placeholder="Quantidade">
+
+    <input type="text" id="linkPedirRoupa" class="form-control mb-4" placeholder="Link imagem">
+
+    <input type="text" maxlength="8" id="cepPedirRoupa" class="form-control mb-4" placeholder="Cep" onblur="pesquisa_pr()">
+
+    <input type="text" id="ufPedirRoupa" class="form-control mb-4" placeholder="UF">
+
+    <input type="text" id="cidadePedirRoupa" class="form-control mb-4" placeholder="Cidade">
+
+    <input type="text" id="bairroPedirRoupa" class="form-control mb-4" placeholder="Bairro">
+
+    <input type="text" id="ruaPedirRoupa" class="form-control mb-4" placeholder="Rua">
+
+    <input type="text" id="numeroCasaPedirRoupa" class="form-control mb-4" placeholder="Número casa/apto">
 
     <div class="form-group">
         <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Descrição"></textarea>
     </div>
 
-    <button class="btn btn-primary me-3" type="submit" style="margin-top: 25px; margin-bottom: 25px;">Próximo</button>
+    <button class="btn btn-primary me-3" type="submit" style="margin-top: 25px; margin-bottom: 25px;background-color: #3bca78;
+    box-shadow: 0 4px 9px -4px #2c9f4a;">Publicar</button>
 
 </form>
 
