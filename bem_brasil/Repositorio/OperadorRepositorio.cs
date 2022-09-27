@@ -1,14 +1,13 @@
-﻿using bem_brasil.DataDb;
+﻿using bem_brasil.Data;
 using bem_brasil.Enums;
-using bem_brasil.Models;
 
 namespace bem_brasil.Repositorio
 {
     public class OperadorRepositorio : IOperadorRepositorio
     {
-        private readonly bemBrasil_SPBContext _bdContext;
+        private readonly bem_brasil_dbContext _bdContext;
 
-        public OperadorRepositorio(bemBrasil_SPBContext bdContext)
+        public OperadorRepositorio(bem_brasil_dbContext bdContext)
         {
             _bdContext = bdContext;
         }
@@ -22,7 +21,7 @@ namespace bem_brasil.Repositorio
             _bdContext.Operadors.Add(operadorModel);
             _bdContext.SaveChanges();
             return operadorModel;
-       
+
         }
 
         public bool Logar(Operador operador)
