@@ -89,3 +89,8 @@ body {
     width: 50em;
     margin-top: 5em;
 }
+
+
+#backgroundLayout{
+   background-image: url("../img/fundo.jpg");
+}
