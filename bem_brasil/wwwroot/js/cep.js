@@ -55,21 +55,21 @@ const pesquisa_pc = () => {
 }
 
 const pesquisa_pb = () => {
-    const cep = document.getElementById("cepDoarBrinquedo");
-    const rua = document.getElementById("ruaDoarBrinquedo");
-    const bairro = document.getElementById("bairroDoarBrinquedo");
-    const cidade = document.getElementById("cidadeDoarBrinquedo");
-    const uf = document.getElementById("ufDoarBrinquedo");
+    const cep = document.getElementById("cepPedirBrinquedo");
+    const rua = document.getElementById("ruaPedirBrinquedo");
+    const bairro = document.getElementById("bairroPedirBrinquedo");
+    const cidade = document.getElementById("cidadePedirBrinquedo");
+    const uf = document.getElementById("ufPedirBrinquedo");
 
     pesquisa_cep(cep, rua, bairro, cidade, uf);
 }
 
 const pesquisa_pr = () => {
-    const cep = document.getElementById("cepDoarRoupa");
-    const rua = document.getElementById("ruaDoarRoupa");
-    const bairro = document.getElementById("bairroDoarRoupa");
-    const cidade = document.getElementById("cidadeDoarRoupa");
-    const uf = document.getElementById("ufDoarRoupa");
+    const cep = document.getElementById("cepPedirRoupa");
+    const rua = document.getElementById("ruaPedirRoupa");
+    const bairro = document.getElementById("bairroPedirRoupa");
+    const cidade = document.getElementById("cidadePedirRoupa");
+    const uf = document.getElementById("ufPedirRoupa");
 
     pesquisa_cep(cep, rua, bairro, cidade, uf);
 }
