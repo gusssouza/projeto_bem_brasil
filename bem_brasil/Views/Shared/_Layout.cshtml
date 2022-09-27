@@ -140,11 +140,16 @@
 
 
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - bem_brasil - <a asp-area="" asp-controller="Home" asp-action="Privacy" style="color: #009791;">Privacy</a>
-        </div>
-    </footer>
+    <footer class="border-top footer text-muted" style="text-align: center;">
+      <div class="container">
+          &copy; 2022 - <a asp-area="" asp-controller="Home" asp-action="Index" style="color: #009791;"><img
+      src="~/img/logo_bb.png"
+      height="26"
+      alt="Bem Brasil Logo"
+      loading="lazy"
+      style="margin-top: -1px;"/></a> - <a asp-controller="Home" asp-action="Sobre">Quem somos?</a>
+      </div> 
+  </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
