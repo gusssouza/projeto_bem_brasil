@@ -19,8 +19,6 @@ namespace bem_brasil.Controllers
             _logger = logger;
         }
 
-
-
         public IActionResult Index()
         {
             return View();
@@ -51,19 +49,17 @@ namespace bem_brasil.Controllers
             return View();
         }
 
-        public IActionResult Sobre()
+        public IActionResult Registro()
         {
             return View();
         }
-        public IActionResult Telacomida()
-        {
-            return View();
-        }
-        public IActionResult Telaroupa()
-        {
-            return View();
-        }
+
         public IActionResult Telabrinquedo()
+        {
+            return View();
+        }
+
+        public IActionResult Sobre()
         {
             return View();
         }

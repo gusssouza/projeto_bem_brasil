@@ -83,8 +83,30 @@ body {
     color: dimgray;
 }
 
-    .email:hover {
-        color: #3bca78;
-    }
+.email:hover {
+    color: #3bca78;
+}
 
 
+.fundo {
+    width: 50em;
+    margin-top: 5em;
+}
+
+
+#backgroundLayout{
+   background-image: url("../img/fundo.jpg");
+}
+
+.link {
+    color: #3bca78;
+}
+
+.link:hover {
+    color: #2c9f4a;
+}
+
+.fundo {
+    width: 7em;
+    margin-top: 10em;
+}
