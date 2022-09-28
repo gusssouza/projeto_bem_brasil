@@ -67,13 +67,6 @@ body {
 
 /* control */
 
-.control {
-    display: flex;
-    flex-direction: row;
-    margin-top:60px;
-    margin-left: 15%;
-}
-
 /* product image  */
 .product-image {
     transition: all 0.3s ease-out;
@@ -92,8 +85,7 @@ body {
 }
 
 .info {
-    background: rgba(27, 26, 26, 0.9);
-    font-family: 'Farsan', cursive;
+    background: rgba(27, 26, 26, 0.9);S
     transition: all 0.3s ease-out;
     transform: translateX(-100%);
     position: absolute;
