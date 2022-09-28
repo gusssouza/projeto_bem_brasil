@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/bem_brasil.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/telaAnuncios.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/telaSalvo.css" asp-append-version="true" />
     <link rel="shortcut icon" href="~/bb.ico"/>
     <!-- Font Awesome -->
     <link
@@ -139,11 +140,16 @@
 
 
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - bem_brasil - <a asp-area="" asp-controller="Home" asp-action="Privacy" style="color: #009791;">Privacy</a>
-        </div>
-    </footer>
+    <footer class="border-top footer text-muted" style="text-align: center;">
+      <div class="container">
+          &copy; 2022 - <a asp-area="" asp-controller="Home" asp-action="Index" style="color: #009791;"><img
+      src="~/img/logo_bb.png"
+      height="26"
+      alt="Bem Brasil Logo"
+      loading="lazy"
+      style="margin-top: -1px;"/></a> - <a asp-controller="Home" asp-action="Sobre">Quem somos?</a>
+      </div> 
+  </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -152,6 +158,7 @@
     <script src="~/js/editar.js" asp-append-version="true"></script>
     <script src="~/js/cookies.js" asp-append-version="true"></script>
     <script src="~/js/cep.js" asp-append-version="true"></script>
+    <script src="~/js/Salvos.js" asp-append-version="true"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>

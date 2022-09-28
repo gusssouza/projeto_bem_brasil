@@ -1,8 +1,6 @@
-﻿using bem_brasil.DataDb;
-using bem_brasil.Models;
+﻿using bem_brasil.Models;
 using bem_brasil.Repositorio;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using System.Diagnostics;
 
 namespace bem_brasil.Controllers
@@ -55,6 +53,10 @@ namespace bem_brasil.Controllers
         }
 
         public IActionResult Telabrinquedo()
+        {
+            return View();
+        }
+        public IActionResult Telasalvos()
         {
             return View();
         }

@@ -1,0 +1,14 @@
+﻿body {
+}
+
+.arroz {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+#divSalvos, #divSalvos2 {
+    width: 1000px;
+    align-items: center;
+}
+

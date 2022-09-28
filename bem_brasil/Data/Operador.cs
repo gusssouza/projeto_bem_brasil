@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace bem_brasil.DataDb
+namespace bem_brasil.Data
 {
     public partial class Operador
     {
@@ -16,11 +16,12 @@ namespace bem_brasil.DataDb
         public Guid CodigoOperador { get; set; }
         public string Nome { get; set; }
         public string Email { get; set; }
+        public string Senha { get; set; }
         public string Cpf { get; set; }
+        public DateTime? DtInclusao { get; set; }
+        public DateTime? DtNascimento { get; set; }
         public int? TipoOperador { get; set; }
         public Guid? CodigoCidade { get; set; }
-        public DateTime? DtInclusao { get; set; }
-        public string? Senha { get; set; }
 
         public virtual Cidade CodigoCidadeNavigation { get; set; }
         public virtual ICollection<Doaco> Doacos { get; set; }
