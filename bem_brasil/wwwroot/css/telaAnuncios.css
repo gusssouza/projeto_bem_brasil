@@ -85,13 +85,13 @@ body {
 }
 
 .info {
-    background: rgba(27, 26, 26, 0.9);S
+    background: rgba(27, 26, 26, 0.9);
     transition: all 0.3s ease-out;
     transform: translateX(-100%);
     position: absolute;
     line-height: 1.9;
     text-align: left;
-    font-size: 120%;
+    font-size: 88%;
     cursor: no-drop;
     color: #FFF;
     height: 100%;
