@@ -36,6 +36,7 @@
     <Content Remove="Views\Home\publicar.cshtml" />
     <Content Remove="Views\Home\publicardoacao.cshtml" />
     <Content Remove="Views\Home\registro.razor" />
+    <Content Remove="wwwroot\css\limpar.js" />
     <Content Remove="wwwroot\js\JavaScript.js" />
     <Content Remove="wwwroot\js\JavaScript1.js" />
   </ItemGroup>

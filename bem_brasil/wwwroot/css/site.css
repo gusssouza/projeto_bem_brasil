@@ -110,3 +110,14 @@ body {
     width: 7em;
     margin-top: 10em;
 }
+
+
+
+.swal-button {
+    background-color: #3bca78 !important;
+}
+
+
+.swal-button--confirm {
+    background-color: #3bca78 !important;
+}
