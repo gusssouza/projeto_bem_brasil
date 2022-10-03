@@ -65,6 +65,13 @@ namespace bem_brasil.Controllers
         {
             return View();
         }
+        public IActionResult Termosdeuso()
+
+        public IActionResult Sobre()
+        {
+            return View();
+        }
+
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
