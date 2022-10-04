@@ -2,8 +2,8 @@
 {
     public enum TipoProduto
     {
-        Alimenticio = 0,
-        Brinquedo = 1,
-        Roupas = 2,
+        Alimenticio = 1,
+        Brinquedo = 2,
+        Roupas = 3,
     }
 }

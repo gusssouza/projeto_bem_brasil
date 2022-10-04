@@ -9,17 +9,21 @@ namespace bem_brasil.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IOperadorRepositorio _operadorRepositorio;
+        private readonly IPublicarRepositorio _publicarRepositorio;
 
         public HomeController(ILogger<HomeController> logger,
-            IOperadorRepositorio operadorRepositorio)
+            IOperadorRepositorio operadorRepositorio, 
+            IPublicarRepositorio publicarRepositorio)
         {
             _operadorRepositorio = operadorRepositorio;
             _logger = logger;
+            _publicarRepositorio = publicarRepositorio;
         }
 
         public IActionResult Index()
         {
-            return View();
+            var produtos = _publicarRepositorio.GetAll();
+            return View(produtos);
         }
 
         public IActionResult Privacy()
@@ -29,12 +33,14 @@ namespace bem_brasil.Controllers
 
         public IActionResult Precisodisso()
         {
-            return View();
+            var pedidos = _publicarRepositorio.GetPedidos();
+            return View(pedidos);
         }
 
         public IActionResult Querodoar()
         {
-            return View();
+            var doacoes = _publicarRepositorio.GetProdutos();
+            return View(doacoes);
         }
 
         public IActionResult Entrega()
