@@ -30,6 +30,9 @@ body {
     color: #009791;
 }
 
+    
+
+
 /* adicinar item precisodisso */
 
 .h1Preciso, .h1Doar {
@@ -84,9 +87,12 @@ body {
     color: #3bca78;
 }
 
+footer {
+    height: 20px;
+}
 
 .fundo {
-    width: 50em;
+    width: 60em;
     margin-top: 5em;
 }
 
