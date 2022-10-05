@@ -96,6 +96,9 @@ footer {
     margin-top: 5em;
 }
 
+.nomeAnunc {
+    margin-top:70px;
+}
 
 #backgroundLayout{
    background-image: url("../img/fundo.jpg");
