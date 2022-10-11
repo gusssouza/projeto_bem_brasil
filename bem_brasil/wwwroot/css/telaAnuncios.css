@@ -71,7 +71,7 @@ body {
     display: flex;
     flex-direction: row;
     margin-top:60px;
-    margin-left: 15%;
+    justify-content: center;
 }
 
 /* product image  */
