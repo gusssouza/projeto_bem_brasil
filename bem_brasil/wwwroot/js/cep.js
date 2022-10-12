@@ -103,3 +103,13 @@ const pesquisa_dr = () => {
 
     pesquisa_cep(cep, rua, bairro, cidade, uf);
 }
+
+const pesquisa_editar = () => {
+    const cep = document.getElementById("cepEditar");
+    const rua = document.getElementById("ruaEditar");
+    const bairro = document.getElementById("bairroEditar");
+    const cidade = document.getElementById("cidadeEditar");
+    const uf = document.getElementById("ufEditar");
+
+    pesquisa_cep(cep, rua, bairro, cidade, uf);
+}

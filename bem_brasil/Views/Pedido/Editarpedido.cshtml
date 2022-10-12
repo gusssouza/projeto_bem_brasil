@@ -4,19 +4,21 @@
 <div style="text-align: center">
 
     <p class="h4 mb-4 mt-4" >Editar publicação</p>
-    <input type="text" id="inputTituloDoarEditar" class="form-control mb-4" placeholder="Título">
-    <input type="number" id="inputTamanhoEditar" class="form-control mb-4" placeholder="Tamanho">
-    <input type="number" id="inputQuantPedir" class="form-control mb-4" placeholder="Quantidade">
-    <input type="text" id="inputValidadeDoar" class="form-control mb-4" placeholder="Validade">
-    <input type="text" id="inputLinkEditar" class="form-control mb-4" placeholder="Link imagem">
-    <input type="text" id="inputCepEditar" class="form-control mb-4" placeholder="Cep">
-    <input type="text" id="inputTituloEditar" class="form-control mb-4" placeholder="Rua">
-    <input type="text" id="inputCidadeEditar" class="form-control mb-4" placeholder="Cidade">
-    <input type="text" id="inputBairroEditar" class="form-control mb-4" placeholder="Bairro">
-    <input type="number" id="inputBairroNumDoarEditar" class="form-control mb-4" placeholder="Número casa/apto">
+    <input type="text" id="tituloDoarEditar" class="form-control mb-4" placeholder="Título">
+    <input type="number" id="tamanhoEditar" class="form-control mb-4" placeholder="Tamanho">
+    <input type="number" id="quantPedirEditar" class="form-control mb-4" placeholder="Quantidade">
+    <input type="text" id="validadeDoarEditar" class="form-control mb-4" placeholder="Validade">
+    <input type="text" id="linkEditar" class="form-control mb-4" placeholder="Link imagem">
+    <input type="text" id="cepEditar" class="form-control mb-4" placeholder="Cep" onblur="pesquisa_editar()">
+    <input type="text" id="ufEditar" class="form-control mb-4" placeholder="UF">
+    <input type="text" id="cidadeEditar" class="form-control mb-4" placeholder="Cidade">
+    <input type="text" id="bairroEditar" class="form-control mb-4" placeholder="Bairro">
+    <input type="text" id="ruaEditar" class="form-control mb-4" placeholder="Rua">
+    <input type="number" id="numDoarEditar" class="form-control mb-4" placeholder="Número casa/apto">
     <div class="form-group">
         <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Descrição"></textarea>
     </div>
-    <button class="btn btn-primary me-3 mb-5" type="submit" style="margin-top: 25px; margin-bottom: 25px;">Atualizar</button>
+    <button class="btn btn-primary me-3 mb-5" type="submit" style="margin-top: 25px; margin-bottom: 25px; background-color: #3bca78;
+    box-shadow: 0 4px 9px -4px #2c9f4a;" >Atualizar</button>
 
 </div>
