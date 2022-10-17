@@ -76,6 +76,11 @@ namespace bem_brasil.Controllers
             return View();
         }
 
+        public IActionResult Tela()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
