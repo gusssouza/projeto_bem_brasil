@@ -1,4 +1,4 @@
-﻿using bem_brasil.Data;
+﻿using bem_brasil.DataFinal;
 
 namespace bem_brasil.Repositorio
 {
@@ -9,5 +9,7 @@ namespace bem_brasil.Repositorio
         List<Produto> GetAll();
         List<Produto> GetPedidos();
         List<Produto> GetProdutos();
+        Produto GetProdutoByCodigo(Guid codigoProduto);
+        void EditarProduto(Produto produto);
     }
 }

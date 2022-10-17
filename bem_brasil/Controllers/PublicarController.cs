@@ -1,4 +1,4 @@
-﻿using bem_brasil.Data;
+﻿using bem_brasil.DataFinal;
 using bem_brasil.Repositorio;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,7 +9,7 @@ namespace bem_brasil.Controllers
         private readonly ILogger<PublicarController> _logger;
         private readonly IPublicarRepositorio _publicarRepositorio;
 
-        public PublicarController(ILogger<PublicarController> logger, 
+        public PublicarController(ILogger<PublicarController> logger,
             IPublicarRepositorio publicarRepositorio)
         {
             _logger = logger;
@@ -60,7 +60,7 @@ namespace bem_brasil.Controllers
         }
 
         [HttpPost]
-        public IActionResult PostarDoacao (Produto produto)
+        public IActionResult PostarDoacao(Produto produto)
         {
             _publicarRepositorio.PublicarDoacao(produto);
 

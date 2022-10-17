@@ -1,22 +1,35 @@
-﻿@{
+﻿@using bem_brasil.DataFinal
+@model Produto
+@{
 }
 
 <div style="text-align: center">
+    <form class="text-center border border-light p-5" asp-controller="Pedido" asp-action="Editar" method="post">
+        <p class="h4 mb-4 mt-4" >Editar publicação</p>
 
-    <p class="h4 mb-4 mt-4" >Editar publicação</p>
-    <input type="text" id="inputTituloDoarEditar" class="form-control mb-4" placeholder="Título">
-    <input type="number" id="inputTamanhoEditar" class="form-control mb-4" placeholder="Tamanho">
-    <input type="number" id="inputQuantPedir" class="form-control mb-4" placeholder="Quantidade">
-    <input type="text" id="inputValidadeDoar" class="form-control mb-4" placeholder="Validade">
-    <input type="text" id="inputLinkEditar" class="form-control mb-4" placeholder="Link imagem">
-    <input type="text" id="inputCepEditar" class="form-control mb-4" placeholder="Cep">
-    <input type="text" id="inputTituloEditar" class="form-control mb-4" placeholder="Rua">
-    <input type="text" id="inputCidadeEditar" class="form-control mb-4" placeholder="Cidade">
-    <input type="text" id="inputBairroEditar" class="form-control mb-4" placeholder="Bairro">
-    <input type="number" id="inputBairroNumDoarEditar" class="form-control mb-4" placeholder="Número casa/apto">
-    <div class="form-group">
-        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Descrição"></textarea>
-    </div>
-    <button class="btn btn-primary me-3 mb-5" type="submit" style="margin-top: 25px; margin-bottom: 25px;">Atualizar</button>
+        <label>Tipo de alimento:</label>
+        <select class="browser-default custom-select mb-4" asp-for="TipoComida">
+            <option value="1" selected>Arroz</option>
+            <option value="2">Feijão</option>
+            <option value="3">Carne</option>
+            <option value="4">Cesta básica</option>
+        </select>
 
+        <input type="text" id="inputTituloDoarEditar" class="form-control mb-4" placeholder="Título" asp-for="Titulo">
+        <input type="number" id="inputTamanhoEditar" class="form-control mb-4" placeholder="Tamanho" asp-for="Tamanho">
+        <input type="number" id="inputQuantPedir" class="form-control mb-4" placeholder="Quantidade" asp-for="QtdProduto">
+        <input type="text" id="inputValidadeDoar" class="form-control mb-4" placeholder="Validade" asp-for="Validade">
+        <input type="text" id="inputLinkEditar" class="form-control mb-4" placeholder="Link imagem" asp-for="LinkImagem">
+        <input type="text" id="inputCepEditar" class="form-control mb-4" placeholder="Cep" asp-for="CEP">
+        <input type="text" id="inputTituloEditar" class="form-control mb-4" placeholder="Rua" asp-for="Rua">
+        <input type="text" id="inputCidadeEditar" class="form-control mb-4" placeholder="Cidade" asp-for="Cidade">
+        <input type="text" id="inputBairroEditar" class="form-control mb-4" placeholder="Bairro" asp-for="Bairro">
+        <input type="number" id="inputBairroNumDoarEditar" class="form-control mb-4" placeholder="Número casa/apto" asp-for="NumeroCasa">
+        <div class="form-group">
+            <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Descrição" asp-for="Descricao"></textarea>
+        </div>
+
+        <input type="text" asp-for="CodigoProduto" class="invisible" />
+        <button class="btn btn-primary me-3 mb-5" type="submit" style="margin-top: 25px; margin-bottom: 25px;">Atualizar</button>
+    </form>
 </div>

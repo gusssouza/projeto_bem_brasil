@@ -1,4 +1,4 @@
-﻿using bem_brasil.Data;
+﻿using bem_brasil.DataFinal;
 using bem_brasil.Repositorio;
 using Microsoft.AspNetCore.Mvc;
 
@@ -36,7 +36,7 @@ namespace bem_brasil.Controllers
 
         public IActionResult Login()
         {
-            return View();
+            return PartialView();
         }
 
     }

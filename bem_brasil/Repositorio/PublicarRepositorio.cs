@@ -1,14 +1,32 @@
-﻿using bem_brasil.Data;
+﻿using bem_brasil.DataFinal;
 
 namespace bem_brasil.Repositorio
 {
     public class PublicarRepositorio : IPublicarRepositorio
     {
-        private readonly bem_brasil_dbContext _bdContext;
+        private readonly bemBrasil_SPBContext _bdContext;
 
-        public PublicarRepositorio(bem_brasil_dbContext bdContext)
+        public PublicarRepositorio(bemBrasil_SPBContext bdContext)
         {
             _bdContext = bdContext;
+        }
+
+        public void EditarProduto(Produto produto)
+        {
+            var produtoDB = GetProdutoByCodigo(produto.CodigoProduto);
+            produtoDB.Titulo = produto.Titulo;
+            produtoDB.Descricao = produto.Descricao;
+            produtoDB.QtdProduto = produto.QtdProduto;
+            produtoDB.Rua = produto.Rua;
+            produtoDB.Bairro = produto.Bairro;
+            produtoDB.CEP = produto.CEP;
+            produtoDB.Cidade = produto.Cidade;
+            produtoDB.LinkImagem = produto.LinkImagem;
+            produtoDB.NumeroCasa = produto.NumeroCasa;
+            produtoDB.Tamanho = produto.Tamanho;
+
+            _bdContext.Produtos.Update(produtoDB);
+            _bdContext.SaveChanges();
         }
 
         public List<Produto> GetAll()
@@ -19,6 +37,12 @@ namespace bem_brasil.Repositorio
         public List<Produto> GetPedidos()
         {
             return _bdContext.Produtos.Select(x => x).Where(a => a.TipoPostagem == Enums.TipoPostagem.Pedido).ToList();
+        }
+
+        public Produto GetProdutoByCodigo(Guid codigoProduto)
+        {
+            var response = _bdContext.Produtos.Select(x => x).Where(a => a.CodigoProduto == codigoProduto).FirstOrDefault();
+            return response;
         }
 
         public List<Produto> GetProdutos()
