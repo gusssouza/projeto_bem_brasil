@@ -11,5 +11,6 @@ namespace bem_brasil.Repositorio
         List<Produto> GetProdutos();
         Produto GetProdutoByCodigo(Guid codigoProduto);
         void EditarProduto(Produto produto);
+        void DeletarProduto(Guid codigoProduto);
     }
 }

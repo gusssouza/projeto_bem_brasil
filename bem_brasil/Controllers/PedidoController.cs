@@ -32,5 +32,11 @@ namespace bem_brasil.Controllers
             _publicarRepositorio.EditarProduto(produto);
             return RedirectToAction("Pedido", "Pedido");
         }
+         
+        public IActionResult Deletar(Guid codigoProduto)
+        {
+            _publicarRepositorio.DeletarProduto(codigoProduto);
+            return RedirectToAction("Pedido", "Pedido");
+        }
     }
 }

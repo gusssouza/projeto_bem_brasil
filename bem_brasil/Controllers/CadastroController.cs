@@ -25,8 +25,14 @@ namespace bem_brasil.Controllers
         [HttpGet]
         public IActionResult Logar(Operador operador)
         {
-            _operadorRepositorio.Logar(operador);
-            return RedirectToAction("Index", "Home");
+            var logado = _operadorRepositorio.Logar(operador);
+            if (logado)
+                return RedirectToAction("Index", "Home");
+            else
+            {
+                TempData["Erro"] = "Houve um erro ao logar!!";
+                return RedirectToAction("Login", "Cadastro");
+            }
         }
 
         public IActionResult Registro()

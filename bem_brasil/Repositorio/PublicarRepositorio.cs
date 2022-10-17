@@ -11,6 +11,14 @@ namespace bem_brasil.Repositorio
             _bdContext = bdContext;
         }
 
+        public void DeletarProduto(Guid codigoProduto)
+        {
+            var produto = GetProdutoByCodigo(codigoProduto);
+
+            _bdContext.Produtos.Remove(produto);
+            _bdContext.SaveChanges();
+        }
+
         public void EditarProduto(Produto produto)
         {
             var produtoDB = GetProdutoByCodigo(produto.CodigoProduto);
