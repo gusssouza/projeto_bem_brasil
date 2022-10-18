@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace bem_brasil.Data
+namespace bem_brasil.DataFinal
 {
     public partial class Doaco
     {

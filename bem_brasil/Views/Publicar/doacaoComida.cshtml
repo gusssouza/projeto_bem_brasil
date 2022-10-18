@@ -1,48 +1,43 @@
-﻿@{
+﻿@using bem_brasil.DataFinal
+@model Produto
+@{
     ViewData["Title"] = "Doar - Comida";
 }
 <div id="divDoarComida">
 
-    <form class="text-center border border-light p-5" action="#!">
+    <form class="text-center border border-light p-5" asp-controller="Publicar" asp-action="PostarDoacao">
 
-    <a class="btn btn-primary mb-3" type="button" asp-controller="Publicar" asp-action="Publicardoacao" style="background-color: #3bca78;
-    box-shadow: 0 4px 9px -4px #2c9f4a;">Voltar</a><p class="h4 mb-4">Doar - Comida</p>
+        <a class="btn btn-primary mb-3" type="button" asp-controller="Publicar" asp-action="Publicardoacao" style="background-color: #3bca78;
+        box-shadow: 0 4px 9px -4px #2c9f4a;">Voltar</a><p class="h4 mb-4">Doar - Comida</p>
 
-    <label>Tipo de alimento:</label>
-    <select class="browser-default custom-select mb-4">
-        <option value="1pedido" selected>Arroz</option>
-        <option value="2pedido">Feijão</option>
-        <option value="3pedido">Carne</option>
-        <option value="4pedido">Cesta básica</option>
-    </select>
+        <label>Tipo de alimento:</label>
+        <select class="browser-default custom-select mb-4" asp-for="TipoComida">
+            <option value="1" selected>Arroz</option>
+            <option value="2">Feijão</option>
+            <option value="3">Carne</option>
+            <option value="4">Cesta básica</option>
+        </select>
 
-    <input type="text" id="tituloDoarComida" class="form-control mb-4" placeholder="Título">
+           <input type="text" id="inputTituloDoarEditar" class="form-control mb-4" placeholder="Título" asp-for="Titulo">
+        <input type="number" id="inputTamanhoEditar" class="form-control mb-4" placeholder="Tamanho" asp-for="Tamanho">
+        <input type="number" id="inputQuantPedir" class="form-control mb-4" placeholder="Quantidade" asp-for="QtdProduto">
+        <input type="text" id="inputValidadeDoar" class="form-control mb-4" placeholder="Validade" asp-for="Validade">
+        <input type="text" id="inputLinkEditar" class="form-control mb-4" placeholder="Link imagem" asp-for="LinkImagem">
+        <input type="text" id="inputCepEditar" class="form-control mb-4" placeholder="Cep" asp-for="CEP">
+        <input type="text" id="inputTituloEditar" class="form-control mb-4" placeholder="Rua" asp-for="Rua">
+        <input type="text" id="inputCidadeEditar" class="form-control mb-4" placeholder="Cidade" asp-for="Cidade">
+        <input type="text" id="inputBairroEditar" class="form-control mb-4" placeholder="Bairro" asp-for="Bairro">
+        <input type="number" id="inputBairroNumDoarEditar" class="form-control mb-4" placeholder="Número casa/apto" asp-for="NumeroCasa">
+        <div class="form-group">
+            <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Descrição" asp-for="Descricao"></textarea>
+        </div>
 
-    <input type="number" id="quantidadeDoarComida" class="form-control mb-4" placeholder="Quantidade">
 
-    <input type="number" id="validadeDoarComida" class="form-control mb-4" placeholder="Validade">
+        <button class="btn btn-primary me-3" type="submit" style="margin-top: 25px; margin-bottom: 25px;background-color: #3bca78;
+        box-shadow: 0 4px 9px -4px #2c9f4a;">Publicar</button>
 
-    <input type="text" id="linkDoarComida" class="form-control mb-4" placeholder="Link imagem">
+        <input type='number' class='invisible' value='1' asp-for='TipoProduto'/> 
 
-    <input type="text" maxlength="8" id="cepDoarComida" class="form-control mb-4" placeholder="Cep" onblur="pesquisa_dc()">
-
-    <input type="text" id="ufDoarComida" class="form-control mb-4" placeholder="UF">
-
-    <input type="text" id="cidadeDoarComida" class="form-control mb-4" placeholder="Cidade">
-
-    <input type="text" id="bairroDoarComida" class="form-control mb-4" placeholder="Bairro">
-
-    <input type="text" id="ruaDoarComida" class="form-control mb-4" placeholder="Rua">
-
-    <input type="text" id="numeroCasaDoarComida" class="form-control mb-4" placeholder="Número casa/apto">
-
-    <div class="form-group">
-        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Descrição"></textarea>
-    </div>
-
-    <button class="btn btn-primary me-3" type="submit" style="margin-top: 25px; margin-bottom: 25px;background-color: #3bca78;
-    box-shadow: 0 4px 9px -4px #2c9f4a;">Publicar</button>
-
-</form>
+    </form>
 
 </div>

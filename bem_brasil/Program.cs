@@ -1,12 +1,13 @@
-using bem_brasil.Data;
+using bem_brasil.DataFinal;
 using bem_brasil.Repositorio;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<bem_brasil_dbContext>();
+builder.Services.AddDbContext<bemBrasil_SPBContext>();
 builder.Services.AddScoped<IOperadorRepositorio, OperadorRepositorio>();
+builder.Services.AddScoped<IPublicarRepositorio, PublicarRepositorio>();
 
 var app = builder.Build();
 
@@ -27,6 +28,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Cadastro}/{action=Login}/");
 
 app.Run();

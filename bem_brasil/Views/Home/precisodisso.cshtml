@@ -1,4 +1,6 @@
-﻿@{
+﻿@using bem_brasil.DataFinal
+@model List<Produto>
+@{
     ViewData["Title"] = "Preciso disso";
 }
 
@@ -7,59 +9,47 @@
         <h1 class="h1Preciso">Você pode fazer a publicação de um item que precisa clicando <a style="color: #009791"; asp-controller="Publicar" asp-action="Publicarpedido">aqui.</a></h1>
 </div>
 
-<div class="containerIndex">
-    <h1 class="tituloIndex">Preciso disso:</h1>
-
+@if ( Model != null && Model.Any(x => x.TipoPostagem == bem_brasil.Enums.TipoPostagem.Pedido))
+{
+    <div class="containerIndex mb-8">
+        <h1 class="tituloIndex">Preciso disso:</h1>
+        <div class="row">
+            @foreach (var produto in Model.Where(x => x.TipoPostagem == bem_brasil.Enums.TipoPostagem.Pedido))
+            {
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="@produto.LinkImagem" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">@produto.TipoProduto.GetValueOrDefault()</h5>
+                            <h3 id="cardItens" class="card-text">Descrição:@produto.Descricao</h3>
+                            @if (produto.Validade != null)
+                            {
+                                <h3 id="cardItens" class="card-text">Validade:@produto.Validade</h3>
+                            }
+                            <h3 id="cardItens" class="card-text">Quantidade: @produto.QtdProduto</h3>
+                            @*<h3 id="cardItens" class="card-text">Localização:@produto.</h3>*@
+                            <a href="#" class="btn btn-primary" style="
+                            background-color: #3bca78;"
+                            box-shadow: 0 4px 9px -4px #2c9f4a;>Doar</a>
+                        </div>
+                    </div>
+                </div>
+            }  
+        </div>
+    </div>
+}else
+{
+        <div class="containerIndex">
+    <h1 class="tituloIndex">Quero doar:</h1>
     <div class="row">
-    <div class="col">
-
-        <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary" style="box-shadow: 0 4px 9px -4px #2c9f4a; background-color: #3bca78;" 
-        onMouseOver="this.style.backgroundColor='#29B966'" onMouseOut="this.style.backgroundColor='#3bca78'">Preciso disso</a>
-      </div>
-    </div>
-    </div>
-
-    <div class="col">
-        <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary" style="box-shadow: 0 4px 9px -4px #2c9f4a; background-color: #3bca78;"
-        onMouseOver="this.style.backgroundColor='#29B966'" onMouseOut="this.style.backgroundColor='#3bca78'">Preciso disso</a>
-      </div>
-    </div>
-    </div>
-
-    <div class="col">
-        <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary" style="box-shadow: 0 4px 9px -4px #2c9f4a; background-color: #3bca78;"
-        onMouseOver="this.style.backgroundColor='#29B966'" onMouseOut="this.style.backgroundColor='#3bca78'">Preciso disso</a>
-      </div>
-    </div>
-    </div>
-    <div class="col">
-        <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary" style="box-shadow: 0 4px 9px -4px #2c9f4a; background-color: #3bca78;"
-        onMouseOver="this.style.backgroundColor='#29B966'" onMouseOut="this.style.backgroundColor='#3bca78'">Preciso disso</a>
-      </div>
-    </div>
-    </div>
-    </div>
-
-</div>
+        <div class="col">
+            <div class="card pt-4 pb-4" id="erro" style="text-align: center; padding: 5px;">
+                <h1 style="color: red; font-size: 25px;">Nenhum item a ser exibido no momento <img style="width: 25px;" src="~/img/sad.png"/></h1>
+                <h3 style="font-size: 18px;"> Você pode fazer a postagem de um <a style="color: #3bca78;" asp-controller="Home" asp-action="Precisodisso">pedido</a> ou <a style="color: #3bca78;" asp-controller="Home" asp-action="Querodoar">doação.</a></h3>
+            </div>
+        </div>
+        </div> 
+    </div> 
+}
 
 

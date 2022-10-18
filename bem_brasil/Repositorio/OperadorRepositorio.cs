@@ -1,13 +1,13 @@
-﻿using bem_brasil.Data;
+﻿using bem_brasil.DataFinal;
 using bem_brasil.Enums;
 
 namespace bem_brasil.Repositorio
 {
     public class OperadorRepositorio : IOperadorRepositorio
     {
-        private readonly bem_brasil_dbContext _bdContext;
+        private readonly bemBrasil_SPBContext _bdContext;
 
-        public OperadorRepositorio(bem_brasil_dbContext bdContext)
+        public OperadorRepositorio(bemBrasil_SPBContext bdContext)
         {
             _bdContext = bdContext;
         }
