@@ -19,7 +19,7 @@ namespace bem_brasil.Controllers
         public IActionResult CadastrarOperador(Operador operador)
         {
             _operadorRepositorio.AdicionarOperador(operador);
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Login", "Cadastro");
         }
 
         [HttpGet]

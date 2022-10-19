@@ -1,6 +1,5 @@
-﻿localStorage.clear();
+﻿
 
-document.getElementById("navbarDropdown").style.visibility = "hidden";
 document.getElementById("botaoCadastro").style.visibility = "visible";
 document.getElementById("botaoLogin").style.visibility = "visible";
 
@@ -15,9 +14,7 @@ const confirmar = () => {
     if (logon) {
         document.getElementById("botaoCadastro").style.visibility = "hidden";
         document.getElementById("botaoLogin").style.visibility = "hidden";
-        document.getElementById("navbarDropdown").style.visibility = "visible";
     } else {
-        document.getElementById("navbarDropdown").style.visibility = "hidden";
         document.getElementById("botaoCadastro").style.visibility = "visible";
         document.getElementById("botaoLogin").style.visibility = "visible";
     }
