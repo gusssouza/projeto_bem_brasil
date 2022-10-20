@@ -76,9 +76,10 @@ namespace bem_brasil.Controllers
             return View();
         }
 
-        public IActionResult Tela()
+        public IActionResult Tela(Guid codigoProduto)
         {
-            return View();
+            var produto = _publicarRepositorio.GetProdutoByCodigo(codigoProduto);
+            return View(produto);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

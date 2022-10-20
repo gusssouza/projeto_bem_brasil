@@ -1,28 +1,27 @@
-﻿const limpa_formulario = (cep, rua, bairro, cidade, uf) => {
+﻿const limpa_formulario = (cep, rua, bairro, cidade) => {
 
     cep.value = "";
     rua.value = "";
     bairro.value = "";
     cidade.value = "";
-    uf.value = ""; 
 }
 
-const complete = (conteudo, cep, rua, bairro, cidade, uf) => {
+const complete = (conteudo, cep, rua, bairro, cidade) => {
     if (!("erro" in conteudo)) {
 
+        console.log(conteudo.logradouro);
         rua.value = conteudo.logradouro;
         bairro.value = conteudo.bairro;
         cidade.value = conteudo.localidade;
-        uf.value = conteudo.uf;
     }
     else {
 
-        limpa_formulario(cep, rua, bairro, cidade, uf);
+        limpa_formulario(cep, rua, bairro, cidade);
         alert("CEP não encontrado.");
     }
 }
 
-const pesquisa_cep = (cep, rua, bairro, cidade, uf) => {
+const pesquisa_cep = (cep, rua, bairro, cidade) => {
     if (cep.value != "") {
         var validacep = /^[0-9]{8}$/;
 
@@ -30,16 +29,16 @@ const pesquisa_cep = (cep, rua, bairro, cidade, uf) => {
             fetch(`https://viacep.com.br/ws/${cep.value}/json/`)
                 .then(response => response.json())
                 .then(conteudo => {
-                    complete(conteudo, cep, rua, bairro, cidade, uf);
+                    complete(conteudo, cep, rua, bairro, cidade);
                 })
         }
         else {
-            limpa_formulario(cep, rua, bairro, cidade, uf);
+            limpa_formulario(cep, rua, bairro, cidade);
             alert("Formato de CEP inválido");
         }
     }
     else {
-        limpa_formulario(cep, rua, bairro, cidade, uf);
+        limpa_formulario(cep, rua, bairro, cidade);
     }
 }
 
@@ -49,9 +48,8 @@ const pesquisa_pc = () => {
     const rua = document.getElementById("ruaPedirComida");
     const bairro = document.getElementById("bairroPedirComida");
     const cidade = document.getElementById("cidadePedirComida");
-    const uf = document.getElementById("ufPedirComida");
 
-    pesquisa_cep(cep, rua, bairro, cidade, uf);
+    pesquisa_cep(cep, rua, bairro, cidade);
 }
 
 const pesquisa_pb = () => {
@@ -59,9 +57,8 @@ const pesquisa_pb = () => {
     const rua = document.getElementById("ruaPedirBrinquedo");
     const bairro = document.getElementById("bairroPedirBrinquedo");
     const cidade = document.getElementById("cidadePedirBrinquedo");
-    const uf = document.getElementById("ufPedirBrinquedo");
 
-    pesquisa_cep(cep, rua, bairro, cidade, uf);
+    pesquisa_cep(cep, rua, bairro, cidade);
 }
 
 const pesquisa_pr = () => {
@@ -69,9 +66,8 @@ const pesquisa_pr = () => {
     const rua = document.getElementById("ruaPedirRoupa");
     const bairro = document.getElementById("bairroPedirRoupa");
     const cidade = document.getElementById("cidadePedirRoupa");
-    const uf = document.getElementById("ufPedirRoupa");
 
-    pesquisa_cep(cep, rua, bairro, cidade, uf);
+    pesquisa_cep(cep, rua, bairro, cidade);
 }
 
 const pesquisa_dc = () => {
@@ -79,19 +75,17 @@ const pesquisa_dc = () => {
     const rua = document.getElementById("ruaDoarComida");
     const bairro = document.getElementById("bairroDoarComida");
     const cidade = document.getElementById("cidadeDoarComida");
-    const uf = document.getElementById("ufDoarComida");
 
-    pesquisa_cep(cep, rua, bairro, cidade, uf);
+    pesquisa_cep(cep, rua, bairro, cidade);
 }
 
 const pesquisa_db = () => {
     const cep = document.getElementById("cepDoarBrinquedo");
     const rua = document.getElementById("ruaDoarBrinquedo");
     const bairro = document.getElementById("bairroDoarBrinquedo");
-    const cidade = document.getElementById("cidadeDoarBrinquedo");
-    const uf = document.getElementById("ufDoarBrinquedo");
+    const cidade = document.getElementById("cidadeDoarBrinquedo");;
 
-    pesquisa_cep(cep, rua, bairro, cidade, uf);
+    pesquisa_cep(cep, rua, bairro, cidade);
 }
 
 const pesquisa_dr = () => {
@@ -99,9 +93,8 @@ const pesquisa_dr = () => {
     const rua = document.getElementById("ruaDoarRoupa");
     const bairro = document.getElementById("bairroDoarRoupa");
     const cidade = document.getElementById("cidadeDoarRoupa");
-    const uf = document.getElementById("ufDoarRoupa");
 
-    pesquisa_cep(cep, rua, bairro, cidade, uf);
+    pesquisa_cep(cep, rua, bairro, cidade);
 }
 
 const pesquisa_editar = () => {
@@ -109,7 +102,6 @@ const pesquisa_editar = () => {
     const rua = document.getElementById("ruaEditar");
     const bairro = document.getElementById("bairroEditar");
     const cidade = document.getElementById("cidadeEditar");
-    const uf = document.getElementById("ufEditar");
 
-    pesquisa_cep(cep, rua, bairro, cidade, uf);
+    pesquisa_cep(cep, rua, bairro, cidade);
 }

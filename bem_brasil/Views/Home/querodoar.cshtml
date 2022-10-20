@@ -20,16 +20,17 @@
                         <img src="@produto.LinkImagem" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">@produto.TipoProduto.GetValueOrDefault()</h5>
-                            <h3 id="cardItens" class="card-text">Descrição:@produto.Descricao</h3>
+                            <h3 id="cardItens" class="card-text">Descrição:</h3>
+                            <p>@produto.Descricao</p>
                             @if (produto.Validade != null)
                             {
                                 <h3 id="cardItens" class="card-text">Validade:@produto.Validade</h3>
                             }
-                            <h3 id="cardItens" class="card-text">Quantidade: @produto.QtdProduto</h3>
-                            @*<h3 id="cardItens" class="card-text">Localização:@produto.</h3>*@
-                            <a href="#" class="btn btn-primary" style="
-                            background-color: #3bca78;"
-                            box-shadow: 0 4px 9px -4px #2c9f4a;>Doar</a>
+                            <h3 id="cardItens" class="card-text">Localização:</h3>
+                            <p>@produto.Bairro, @produto.Cidade</p>
+                            <a class="btn btn-primary" style="
+                              background-color: #3bca78;"
+                              box-shadow: 0 4px 9px -4px #2c9f4a; asp-controller="Home" asp-action="Tela" asp-route-CodigoProduto="@produto.CodigoProduto">Doar</a>
                         </div>
                     </div>
                 </div>
