@@ -1,3 +1,5 @@
+# Bem Brasil
+
 O objetivo do site é unir o doador com quem precisa de algum item, com a maior transparência possível, para quem assim possamos eliminar toda a falta de comunicação que hoje existe no nosso sistema de doação.
 Atualmente o sistema que utilizamos para fazer doações gira em torno de ONGS que fazem esse trabalho sem transparência suficiente deixando nos em dúvida em relação a se o item foi realmente enviado para quem necessita ou se o foi extraviado.
 
@@ -8,16 +10,17 @@ Utilizamos o VisualStudio como IDE e a arquitetura MVC tentando maximizar o uso 
 Fizemos conexões com API Externas ao nosso site como a API VIACEP
 Tentamos ao máximo utilizar do cleancode e de ferramentas como o LINQ e Entity para consultas ao banco de dados
 
-![Site]()
+# Base do site
+![Site](imagem_site.png)
 
-Criadores:
+## Criadores:
 
-[Gabriel Pereira Portella](https://github.com/gbzzera7)
+- [Gabriel Pereira Portella](https://github.com/gbzzera7)
 
-[Gabriel Retzlaff](https://github.com/R3TZgl)
+- [Gabriel Retzlaff](https://github.com/R3TZgl)
 
-[Gustavo da Silva de Souza](https://github.com/gusssouza)
+- [Gustavo da Silva de Souza](https://github.com/gusssouza)
 
-[Luis Fillipe Venturini Quintino](https://github.com/LuisQuintino)
+- [Luis Fillipe Venturini Quintino](https://github.com/LuisQuintino)
 
-[Nicolas do Nascimento Carvalho](https://github.com/RASROWDK)
+- [Nicolas do Nascimento Carvalho](https://github.com/RASROWDK)
