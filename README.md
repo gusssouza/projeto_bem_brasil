@@ -13,6 +13,8 @@ Tentamos ao máximo utilizar do cleancode e de ferramentas como o LINQ e Entity 
 # Base do site
 ![Site](imagem_site.png)
 
+[Vídeo demonstrativo](https://youtu.be/fv0LCXc3ioU)
+
 ## Criadores:
 
 - Gabriel Pereira Portella : <[GitHub](https://github.com/gbzzera7) - [Linkedin](https://www.linkedin.com/in/gabriel-pereira-portella-6b8413238/)>
