@@ -15,12 +15,12 @@ Tentamos ao máximo utilizar do cleancode e de ferramentas como o LINQ e Entity 
 
 ## Criadores:
 
-- [Gabriel Pereira Portella](https://github.com/gbzzera7)
+- Gabriel Pereira Portella : <[GitHub](https://github.com/gbzzera7) - [Linkedin](https://www.linkedin.com/in/gabriel-pereira-portella-6b8413238/)>
 
-- [Gabriel Retzlaff](https://github.com/R3TZgl)
+- Gabriel Retzlaff : <[GitHub](https://github.com/R3TZgl) - [Linkedin](https://www.linkedin.com/in/gabriel-retzlaff-348314239/)>
 
-- [Gustavo da Silva de Souza](https://github.com/gusssouza)
+- Gustavo da Silva de Souza : <[GitHub](https://github.com/gusssouza) - [Linkedin](https://www.linkedin.com/in/gustavo-s-souza-319794222/)>
 
-- [Luis Fillipe Venturini Quintino](https://github.com/LuisQuintino)
+- Luis Fillipe Venturini Quintino : <[GitHub](https://github.com/LuisQuintino) - [Linkedin](https://www.linkedin.com/in/lu%C3%ADs-fillipe-venturini-quintino-a50614226/)>
 
-- [Nicolas do Nascimento Carvalho](https://github.com/RASROWDK)
+- Nicolas do Nascimento Carvalho : <[GitHub](https://github.com/RASROWDK) - [Linkedin](https://www.linkedin.com/in/nicolas-do-nascimento-carvalho-b1885222a/)>
