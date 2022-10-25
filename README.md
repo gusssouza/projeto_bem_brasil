@@ -13,7 +13,7 @@ Tentamos ao máximo utilizar do cleancode e de ferramentas como o LINQ e Entity 
 # Base do site
 ![Site](imagem_site.png)
 
-> [Vídeo demonstrativo](https://youtu.be/fv0LCXc3ioU)
+> - [Vídeo demonstrativo](https://youtu.be/fv0LCXc3ioU)
 
 ## Criadores:
 
