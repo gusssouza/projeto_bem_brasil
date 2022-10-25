@@ -8,6 +8,8 @@ Utilizamos o VisualStudio como IDE e a arquitetura MVC tentando maximizar o uso 
 Fizemos conexões com API Externas ao nosso site como a API VIACEP
 Tentamos ao máximo utilizar do cleancode e de ferramentas como o LINQ e Entity para consultas ao banco de dados
 
+![Site]()
+
 Criadores:
 
 [Gabriel Pereira Portella](https://github.com/gbzzera7)
