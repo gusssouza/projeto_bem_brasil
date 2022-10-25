@@ -12,8 +12,10 @@ Criadores:
 
 [Gabriel Pereira Portella](https://github.com/gbzzera7)
 
-Gabriel Retzlaff
+[Gabriel Retzlaff](https://github.com/R3TZgl)
 
-Gustavo da Silva de Souza
-Luis Fillipe Venturini Quintino
-Nicolas do Nascimento Carvalho
+[Gustavo da Silva de Souza](https://github.com/gusssouza)
+
+[Luis Fillipe Venturini Quintino](https://github.com/LuisQuintino)
+
+[Nicolas do Nascimento Carvalho](https://github.com/RASROWDK)
