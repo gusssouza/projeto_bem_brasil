@@ -10,8 +10,10 @@ Tentamos ao máximo utilizar do cleancode e de ferramentas como o LINQ e Entity 
 
 Criadores:
 
-Gabriel Pereira Portella
+[Gabriel Pereira Portella](https://github.com/gbzzera7)
+
 Gabriel Retzlaff
+
 Gustavo da Silva de Souza
 Luis Fillipe Venturini Quintino
 Nicolas do Nascimento Carvalho
